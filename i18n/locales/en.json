@@ -1,3 +1,7 @@
 {
-  "welcome": "Welcome!"
+  "welcome": "Welcome!",
+  "presentation": {
+    "name": "Yvan SANSON",
+    "text": "Full stack engineer with 6 years of experience in various domains, ranging from medical devices to AI. I also have some DevOps experience, and I'm learning systems programming with my personal projects."
+  }
 }

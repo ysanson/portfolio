@@ -1,3 +1,7 @@
 {
-  "welcome": "ようこそ！"
+  "welcome": "ようこそ！",
+  "presentation": {
+    "name": "Yvan SANSON (イヴァン　サンソン)",
+    "text": "Full stack engineer with 6 years of experience in various domains, ranging from medical devices to AI. I also have some DevOps experience, and systems programming with my personal projects."
+  }
 }

@@ -1,3 +1,7 @@
 {
-  "welcome": "Bienvenue!"
+  "welcome": "Bienvenue!",
+  "presentation": {
+    "name": "Yvan SANSON",
+    "text": "Ingénieur fullstack avec 6 and d'expérience dans des domaines variés, allant de l'IA à des appareils médicaux. J'ai également une expérience dans le DevOps, et je me mets à la programmation système avec mes projets personnels."
+  }
 }

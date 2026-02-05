@@ -11,6 +11,10 @@
 }
 
 .dark {
+  body {
+    background-color: #3b4252;
+  }
+
   ::selection {
     color: #ffffff;
     background-color: #474747;
