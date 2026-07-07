@@ -3,5 +3,76 @@
   "presentation": {
     "name": "Yvan SANSON",
     "text": "Full stack engineer with 6 years of experience in various domains, ranging from medical devices to AI. I also have some DevOps experience, and I'm learning systems programming with my personal projects."
+  },
+  "experience": {
+    "teamSize": "Team size: ",
+    "corpy": {
+      "role": "Full Stack Engineer",
+      "period": "Jan 2024 – Present",
+      "team": "6 engineers, 2 data scientists, 1 UI/UX designer, 1 PM",
+      "description": "Full-stack engineer on Corpy's flagship BtoB MLOps platform, also contributing to R&D projects, infrastructure and QA. I work on high performance data ingestion and processing systems, as well as image inference and dataset management.",
+      "highlights": [
+        "I built a licensing system with cryptographic hardware tying and OTA validation, for cloud and offline deployments",
+        "I took ownership of the CI/CD pipeline, cutting deployment time and helping sales team better understand the platform",
+        "I helped build some image inference pipeline, targeting sub 20ms inference and response time",
+        "I created a custom installer for offline deployments in our clients' environments"
+      ]
+    },
+    "sncf": {
+      "role": "Tech Lead Full stack",
+      "agency": "via Viveris",
+      "period": "May 2022 – Dec 2023",
+      "team": "3–5 full-stack engineers, 4 Ops engineers, 1 PM",
+      "description": "Tech lead for a team of 3–5 building a web app that streamlined IaaS/PaaS server provisioning. It still is the company's reference tool today, with dozens of deployments across multiple teams each day.",
+      "highlights": [
+        "I built and open sourced a custom dynamic form generator driven by Terraform parameters to allow users to build their own deployment form.",
+        "We reduced user errors by 70% through workflow and UI improvements",
+        "I integrated with company-wide OIDC authentication for faster and easier access to the platform"
+      ]
+    },
+    "uromems": {
+      "role": "Software Engineer, Android focused",
+      "agency": "via Viveris",
+      "period": "May 2021 – May 2022",
+      "team": "3 mobile engineers, 7 low-level engineers, 1 Test / QA engineer",
+      "description": "I improved the Android app controlling a medical implant over a custom Bluetooth protocol at this medtech startup, then helped rebuild it in Kotlin. We were a 3 people team, working closely with the hardware teams to ensure the app was conform to the high standards of this product.",
+      "highlights": [
+        "I participated in the overhaul of the Bluetooth communication and low-level byte decoding layer",
+        "We rebuilt the new app's Bluetooth layer in Kotlin using coroutines for better concurrency and performance",
+        "I added test suites meeting ISO 62304 medical software requirements, along with proper documentation and archiving."
+      ]
+    },
+    "ecam": {
+      "role": "Frontend Engineer",
+      "agency": "via Viveris",
+      "period": "Sep 2020 – May 2021",
+      "team": "1 frontend engineer, 2 backend engineers, 1 PM",
+      "description": "Built a web app for ECAM, a French engineering school, connecting students with companies offering internships, replacing a fully manual process. I started with only the frontend, but progressed to the backend as well as we needed faster release times.",
+      "highlights": [
+        "I designed and implemented the frontend following the specifications provided by the client",
+        "I turned the client's workflow into technical specifications",
+        "We cut the school staff's internship-handling time by more than 60%"
+      ]
+    }
+  },
+  "skills": {
+    "technicalTitle": "Technical Skills",
+    "softTitle": "Soft Skills",
+    "categories": {
+      "languages": "Programming Languages",
+      "frameworks": "Frameworks",
+      "databases": "Databases",
+      "cloud": "Cloud / DevOps",
+      "communication": "Communication",
+      "teamwork": "Teamwork",
+      "problemSolving": "Problem-Solving",
+      "adaptability": "Adaptability"
+    },
+    "soft": {
+      "communication": ["Clear reporting", "Active listening", "Technical writing", "Knowledge transfer"],
+      "teamwork": ["Technical leadership", "Collaboration", "Peer programming", "Agile/Scrum methods"],
+      "problemSolving": ["Critical thinking", "Self-learning"],
+      "adaptability": ["Continuous learning", "Priority management"]
+    }
   }
 }

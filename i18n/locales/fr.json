@@ -3,5 +3,76 @@
   "presentation": {
     "name": "Yvan SANSON",
     "text": "Ingénieur fullstack avec 6 and d'expérience dans des domaines variés, allant de l'IA à des appareils médicaux. J'ai également une expérience dans le DevOps, et je me mets à la programmation système avec mes projets personnels."
+  },
+  "experience": {
+    "teamSize": "Composition de l'équipe : ",
+    "corpy": {
+      "role": "Ingénieur Full Stack",
+      "period": "Janvier 2024 – Présent",
+      "team": "6 ingénieurs, 2 data scientists, 1 designer UI/UX, 1 chef de projet",
+      "description": "Ingénieur full-stack sur la plateforme MLOps BtoB phare de Corpy, contribuant aussi à des projets de R&D, à l'infrastructure et à la QA. Je travaille sur des systèmes d'ingestion et de traitement de données haute performance, ainsi que sur l'inférence d'images et la gestion des datasets.",
+      "highlights": [
+        "J'ai développé un système de licence avec liaison cryptographique au matériel et validation OTA, pour les déploiements cloud et hors-ligne",
+        "J'ai pris en charge le pipeline CI/CD, réduisant le temps de déploiement et aidant l'équipe commerciale à mieux comprendre la plateforme",
+        "J'ai participé à la construction d'un pipeline d'inférence d'images, visant un temps d'inférence et de réponse inférieur à 20 ms",
+        "J'ai créé un installeur personnalisé pour les déploiements hors-ligne chez nos clients"
+      ]
+    },
+    "sncf": {
+      "role": "Tech Lead Full Stack",
+      "agency": "via Viveris",
+      "period": "Mai 2022 – Décembre 2023",
+      "team": "3 à 5 ingénieurs full-stack, 4 ingénieurs Ops, 1 chef de projet",
+      "description": "Tech lead d'une équipe de 3 à 5 personnes sur une application web simplifiant le provisionnement de serveurs IaaS/PaaS. Elle reste aujourd'hui l'outil de référence de l'entreprise, avec des dizaines de déploiements par jour à travers plusieurs équipes.",
+      "highlights": [
+        "J'ai développé et open-sourcé un générateur de formulaires dynamiques basé sur les paramètres Terraform, permettant aux utilisateurs de créer leurs propres formulaires de déploiement.",
+        "Nous avons réduit de 70 % les erreurs utilisateur grâce à l'amélioration du workflow et de l'UI",
+        "J'ai intégré l'authentification OIDC de l'entreprise pour un accès plus rapide et plus simple à la plateforme"
+      ]
+    },
+    "uromems": {
+      "role": "Ingénieur logiciel, Android",
+      "agency": "via Viveris",
+      "period": "Mai 2021 – Mai 2022",
+      "team": "3 ingénieurs mobile, 7 ingénieurs bas niveau, 1 ingénieur Test / QA",
+      "description": "J'ai amélioré l'application Android pilotant un implant médical via un protocole Bluetooth propriétaire dans cette startup medtech, puis participé à sa reconstruction en Kotlin. Nous étions une équipe de 3 personnes, travaillant en étroite collaboration avec les équipes hardware pour garantir la conformité de l'application aux exigences élevées de ce produit.",
+      "highlights": [
+        "J'ai participé à la refonte de la couche de communication Bluetooth et du décodage bas niveau",
+        "Nous avons reconstruit la couche Bluetooth de la nouvelle application en Kotlin avec des coroutines pour une meilleure concurrence et performance",
+        "J'ai ajouté des suites de tests conformes à la norme médicale ISO 62304, avec une documentation et un archivage appropriés."
+      ]
+    },
+    "ecam": {
+      "role": "Ingénieur Frontend",
+      "agency": "via Viveris",
+      "period": "Septembre 2020 – Mai 2021",
+      "team": "1 ingénieur frontend, 2 ingénieurs backend, 1 chef de projet",
+      "description": "Développement d'une application web pour l'ECAM, une école d'ingénieurs française, connectant étudiants et entreprises proposant des stages, remplaçant un processus jusque-là entièrement manuel. J'ai commencé uniquement sur le frontend, puis évolué vers le backend car nous avions besoin de cycles de livraison plus rapides.",
+      "highlights": [
+        "J'ai conçu et développé le frontend en suivant les spécifications fournies par le client",
+        "J'ai traduit le workflow du client en spécifications techniques",
+        "Nous avons réduit de plus de 60 % le temps consacré par le personnel de l'école à la gestion des stages"
+      ]
+    }
+  },
+  "skills": {
+    "technicalTitle": "Compétences techniques",
+    "softTitle": "Compétences comportementales",
+    "categories": {
+      "languages": "Langages de programmation",
+      "frameworks": "Frameworks",
+      "databases": "Bases de données",
+      "cloud": "Cloud / DevOps",
+      "communication": "Communication",
+      "teamwork": "Travail d'équipe",
+      "problemSolving": "Résolution de problèmes",
+      "adaptability": "Adaptabilité"
+    },
+    "soft": {
+      "communication": ["Rédaction de rapports clairs", "Écoute active", "Rédaction technique", "Transfert de connaissances"],
+      "teamwork": ["Leadership technique", "Collaboration", "Programmation en binôme", "Méthodes agile/scrum"],
+      "problemSolving": ["Esprit critique", "Autoformation"],
+      "adaptability": ["Apprentissage continu", "Gestion des priorités"]
+    }
   }
 }
