@@ -69,10 +69,48 @@
       "adaptability": "Adaptabilité"
     },
     "soft": {
-      "communication": ["Rédaction de rapports clairs", "Écoute active", "Rédaction technique", "Transfert de connaissances"],
-      "teamwork": ["Leadership technique", "Collaboration", "Programmation en binôme", "Méthodes agile/scrum"],
+      "communication": [
+        "Rédaction de rapports clairs",
+        "Écoute active",
+        "Rédaction technique",
+        "Transfert de connaissances"
+      ],
+      "teamwork": [
+        "Leadership technique",
+        "Collaboration",
+        "Programmation en binôme",
+        "Méthodes agile/scrum"
+      ],
       "problemSolving": ["Esprit critique", "Autoformation"],
       "adaptability": ["Apprentissage continu", "Gestion des priorités"]
+    }
+  },
+  "education": {
+    "location": "France",
+    "period": "2015 - 2020",
+    "degree": "Diplôme d'ingénieur (master) en Informatique et Gestion",
+    "description": "Spécialisation en programmation et conception logicielle. Le cursus combinait 2 ans de tronc commun et 3 ans de cycle ingénieur, avec 3 stages, dont les 2 derniers en conditions d'ingénieur."
+  },
+  "languages": {
+    "headers": {
+      "language": "Langue",
+      "level": "Niveau",
+      "certification": "Certification"
+    },
+    "french": {
+      "name": "Français",
+      "level": "Langue maternelle",
+      "certification": "—"
+    },
+    "english": {
+      "name": "Anglais",
+      "level": "C1 – Professionnel",
+      "certification": "TOEIC 980/990"
+    },
+    "japanese": {
+      "name": "Japonais",
+      "level": "Professionnel",
+      "certification": "JLPT N2"
     }
   }
 }

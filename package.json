@@ -11,15 +11,15 @@
   },
   "dependencies": {
     "@nuxt/a11y": "1.0.0-alpha.1",
-    "@nuxt/eslint": "1.13.0",
-    "@nuxt/fonts": "0.13.0",
-    "@nuxt/ui": "4.4.0",
-    "@nuxtjs/i18n": "10.2.1",
-    "eslint": "^9.39.2",
-    "nuxt": "^4.3.0",
-    "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3",
-    "vue": "^3.5.27",
-    "vue-router": "^4.6.4"
+    "@nuxt/eslint": "1.16.0",
+    "@nuxt/fonts": "0.14.0",
+    "@nuxt/ui": "4.9.0",
+    "@nuxtjs/i18n": "10.4.0",
+    "eslint": "^10.6.0",
+    "nuxt": "^4.4.8",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3",
+    "vue": "^3.5.39",
+    "vue-router": "^5.1.0"
   }
 }

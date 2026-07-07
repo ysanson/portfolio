@@ -74,5 +74,33 @@
       "problemSolving": ["Critical thinking", "Self-learning"],
       "adaptability": ["Continuous learning", "Priority management"]
     }
+  },
+  "education": {
+    "location": "France",
+    "period": "2015 - 2020",
+    "degree": "Engineering diploma (Master's degree) in Computer Science and Management",
+    "description": "Focused on software programming and design. The program combined 2 years of undergraduate studies with 3 years of engineering coursework, including 3 internships — the latter two in an engineering setting."
+  },
+  "languages": {
+    "headers": {
+      "language": "Language",
+      "level": "Level",
+      "certification": "Certification"
+    },
+    "french": {
+      "name": "French",
+      "level": "Native",
+      "certification": "—"
+    },
+    "english": {
+      "name": "English",
+      "level": "C1 – Business",
+      "certification": "TOEIC 980/990"
+    },
+    "japanese": {
+      "name": "Japanese",
+      "level": "Business",
+      "certification": "JLPT N2"
+    }
   }
 }

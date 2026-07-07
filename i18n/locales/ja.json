@@ -74,5 +74,33 @@
       "problemSolving": ["批判的思考", "自己学習"],
       "adaptability": ["継続的学習", "優先順位管理"]
     }
+  },
+  "education": {
+    "location": "フランス",
+    "period": "2015年 - 2020年",
+    "degree": "コンピュータサイエンス・マネジメント専攻 エンジニアディプロマ（修士相当）",
+    "description": "ソフトウェアプログラミングと設計に重点を置いたカリキュラム。教養課程2年とエンジニアリング課程3年で構成され、3回のインターンシップ（うち後半2回はエンジニアリング業務）を含む。"
+  },
+  "languages": {
+    "headers": {
+      "language": "言語",
+      "level": "レベル",
+      "certification": "資格"
+    },
+    "french": {
+      "name": "フランス語",
+      "level": "母語",
+      "certification": "—"
+    },
+    "english": {
+      "name": "英語",
+      "level": "ビジネスレベル（C1相当）",
+      "certification": "TOEIC 980/990"
+    },
+    "japanese": {
+      "name": "日本語",
+      "level": "ビジネスレベル",
+      "certification": "日本語能力試験 N2"
+    }
   }
 }
