@@ -33,6 +33,19 @@ const toggleStartMenu = () => {
 const closeStartMenu = () => {
     showStartMenu.value = false;
 };
+
+const now = ref(new Date());
+let clockInterval: ReturnType<typeof setInterval> | undefined;
+
+onMounted(() => {
+    clockInterval = setInterval(() => {
+        now.value = new Date();
+    }, 1000);
+});
+
+onUnmounted(() => {
+    clearInterval(clockInterval);
+});
 </script>
 
 <template>
@@ -102,7 +115,7 @@ const closeStartMenu = () => {
                     @update:model-value="setLocale($event)"
                 />
                 <div class="xp-clock">
-                    {{ new Date().toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' }) }}
+                    {{ now.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' }) }}
                 </div>
             </div>
         </div>
