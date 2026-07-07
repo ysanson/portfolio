@@ -112,5 +112,39 @@
       "level": "Professionnel",
       "certification": "JLPT N2"
     }
+  },
+  "projects": {
+    "intro": "Une sélection de projets personnels que j'ai développés pour apprendre de nouveaux langages, explorer la programmation système et comprendre comment fonctionne les services que j'utilise au quotidien. Le code source est hébergé sur GitHub et GitLab.",
+    "openRepository": "Dépôt",
+    "liveDemo": "Démo en ligne",
+    "stats": {
+      "loading": "Chargement des statistiques…",
+      "unavailable": "Statistiques indisponibles",
+      "updated": "Mis à jour le {date}",
+      "stars": "étoiles"
+    },
+    "items": {
+      "veloVista": {
+        "description": "Une application iOS et watchOS, entièrement développée en SwiftUI selon les pratiques et modèles Apple modernes, qui enregistre les sorties vélo depuis l'app Fitness d'Apple, gère plusieurs vélos et suit leurs éléments d'entretien."
+      },
+      "rsTorrent": {
+        "description": "Un client BitTorrent écrit en Rust à but éducatif, pour explorer les réseaux pair-à-pair et l'analyse de protocoles binaires."
+      },
+      "interpreterGo": {
+        "description": "Mon interprétation du célèbre livre « Writing An Interpreter In Go » : un lexer, un parseur et un évaluateur pour un petit langage personnalisé."
+      },
+      "gitGud": {
+        "description": "Une interface terminal expérimentale pour parcourir et manipuler des dépôts Git, écrite en Go."
+      },
+      "simpleFormBuilder": {
+        "description": "Un générateur de formulaires simple, piloté par schéma, pour des applications React."
+      },
+      "nyaaBrowser": {
+        "description": "Une application de bureau pour parcourir et rechercher les torrents récemment ajoutés sur Nyaa.si."
+      },
+      "focalStats": {
+        "description": "Un petit utilitaire pour calculer des statistiques focales sur une image ou un dossier entier d'images."
+      }
+    }
   }
 }

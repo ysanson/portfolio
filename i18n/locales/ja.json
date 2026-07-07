@@ -102,5 +102,39 @@
       "level": "ビジネスレベル",
       "certification": "日本語能力試験 N2"
     }
+  },
+  "projects": {
+    "intro": "新しい言語の習得やシステムプログラミングの探求、自分自身のニーズを満たすために作った個人プロジェクトの一部です。ソースコードはGitHubとGitLabで公開しています。",
+    "openRepository": "リポジトリ",
+    "liveDemo": "ライブデモ",
+    "stats": {
+      "loading": "統計情報を読み込み中…",
+      "unavailable": "統計情報を取得できませんでした",
+      "updated": "更新日: {date}",
+      "stars": "スター数"
+    },
+    "items": {
+      "veloVista": {
+        "description": "モダンな Apple の設計パターンに従い、SwiftUI のみで構築された iOS / watchOS アプリ。Apple の Fitness アプリからサイクリングの記録を保存し、複数の自転車を管理してメンテナンス項目を追跡する。"
+      },
+      "rsTorrent": {
+        "description": "Rustで書いた学習目的のBitTorrentクライアント。P2Pネットワーキングとバイナリプロトコルの解析を学ぶために開発。"
+      },
+      "interpreterGo": {
+        "description": "書籍『Writing An Interpreter In Go』を参考に実装したインタプリタ。字句解析器、構文解析器、評価器を含む。"
+      },
+      "gitGud": {
+        "description": "Gitリポジトリを閲覧・操作するための実験的なターミナルUI（TUI）。Go言語で実装。"
+      },
+      "simpleFormBuilder": {
+        "description": "React向けの、スキーマ駆動型のシンプルなフォームビルダー兼ジェネレーター。"
+      },
+      "nyaaBrowser": {
+        "description": "Nyaa.siに新しく追加されたトレントを閲覧・検索するためのデスクトップアプリ。"
+      },
+      "focalStats": {
+        "description": "1枚または複数枚の画像のフォーカル統計量を計算するための小さなユーティリティ。"
+      }
+    }
   }
 }
