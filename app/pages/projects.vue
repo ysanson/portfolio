@@ -77,6 +77,15 @@ const projects = computed<ProjectEntry[]>(() => [
         description: t("projects.items.focalStats.description"),
         tags: ["Image Processing", "CLI"],
     },
+    {
+        name: "portfolio",
+        platform: "github",
+        owner: "ysanson",
+        repo: "portfolio",
+        repoUrl: "https://github.com/ysanson/portfolio",
+        description: t("projects.items.portfolio.description"),
+        tags: ["Vue", "Nuxt", "TypeScript", "Tailwind CSS"],
+    },
 ]);
 </script>
 

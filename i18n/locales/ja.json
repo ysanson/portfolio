@@ -2,7 +2,7 @@
   "welcome": "ようこそ！",
   "presentation": {
     "name": "Yvan SANSON (イヴァン　サンソン)",
-    "text": "Full stack engineer with 6 years of experience in various domains, ranging from medical devices to AI. I also have some DevOps experience, and systems programming with my personal projects."
+    "text": "TypeScript、Go、Python、Javaなど幅広い技術スタックを扱い、Kubernetes、Terraform、AWS/GCP上でのCI/CDといったDevOpsの実務経験も持つ。業務外では、日頃使っているツールの仕組みを深く理解したいという好奇心から、Rustで実装したBitTorrentクライアント、Goで実装したインタプリタ、自転車のメンテナンスを記録するSwiftUIアプリなど、個人プロジェクトを通じてシステムプログラミングやモバイル開発を探求している。"
   },
   "experience": {
     "teamSize": "チーム規模: ",
@@ -134,6 +134,9 @@
       },
       "focalStats": {
         "description": "1枚または複数枚の画像のフォーカル統計量を計算するための小さなユーティリティ。"
+      },
+      "portfolio": {
+        "description": "このサイト自体です。NuxtとVueで構築されたWindows XPテーマの個人ポートフォリオで、タスクバーやスタートメニュー、GitHub/GitLabのライブ統計情報を備えています。"
       }
     }
   }

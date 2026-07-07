@@ -2,7 +2,7 @@
   "welcome": "Welcome!",
   "presentation": {
     "name": "Yvan SANSON",
-    "text": "Full stack engineer with 6 years of experience in various domains, ranging from medical devices to AI. I also have some DevOps experience, and I'm learning systems programming with my personal projects."
+    "text": "I move comfortably across the stack, including TypeScript, Go, Python, and Java, and have hands-on DevOps experience with Kubernetes, Terraform, and CI/CD on AWS and GCP. Outside of work, I dig into systems programming and mobile development through personal projects: a BitTorrent client in Rust, a tree-walking interpreter in Go, and a SwiftUI app for tracking bike maintenance, because I like understanding how the tools I rely on actually work under the hood."
   },
   "experience": {
     "teamSize": "Team size: ",
@@ -134,6 +134,9 @@
       },
       "focalStats": {
         "description": "A small utility to compute focal statistics for a single picture or a whole folder of images."
+      },
+      "portfolio": {
+        "description": "This very site — a Windows XP-themed personal portfolio built with Nuxt and Vue, complete with a taskbar, start menu, and live GitHub/GitLab project stats."
       }
     }
   }

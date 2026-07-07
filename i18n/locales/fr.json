@@ -2,7 +2,7 @@
   "welcome": "Bienvenue!",
   "presentation": {
     "name": "Yvan SANSON",
-    "text": "Ingénieur fullstack avec 6 and d'expérience dans des domaines variés, allant de l'IA à des appareils médicaux. J'ai également une expérience dans le DevOps, et je me mets à la programmation système avec mes projets personnels."
+    "text": "Je suis à l'aise sur l'ensemble de la stack, notamment TypeScript, Go, Python et Java, et j'ai une expérience concrète du DevOps avec Kubernetes, Terraform et le CI/CD sur AWS et GCP. En dehors du travail, j'explore la programmation système et le développement mobile à travers des projets personnels : un client BitTorrent en Rust, un interpréteur en Go conçu selon le principe du parcours d'arbre, et une application SwiftUI pour suivre l'entretien de vélos, parce que j'aime comprendre comment fonctionnent réellement les outils que j'utilise au quotidien."
   },
   "experience": {
     "teamSize": "Composition de l'équipe : ",
@@ -144,6 +144,9 @@
       },
       "focalStats": {
         "description": "Un petit utilitaire pour calculer des statistiques focales sur une image ou un dossier entier d'images."
+      },
+      "portfolio": {
+        "description": "Ce site lui-même — un portfolio personnel au thème Windows XP développé avec Nuxt et Vue, avec sa barre des tâches, son menu Démarrer et des statistiques GitHub/GitLab en direct."
       }
     }
   }
