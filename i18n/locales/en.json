@@ -2,7 +2,7 @@
   "welcome": "Welcome!",
   "presentation": {
     "name": "Yvan SANSON",
-    "text": "Full stack engineer with 6 years of experience in various domains, ranging from medical devices to AI. I also have some DevOps experience, and I'm learning systems programming with my personal projects."
+    "text": "I move comfortably across the stack, including TypeScript, Go, Python, and Java, and have hands-on DevOps experience with Kubernetes, Terraform, and CI/CD on AWS and GCP. Outside of work, I dig into systems programming and mobile development through personal projects: a BitTorrent client in Rust, a tree-walking interpreter in Go, and a SwiftUI app for tracking bike maintenance, because I like understanding how the tools I rely on actually work under the hood."
   },
   "experience": {
     "teamSize": "Team size: ",
@@ -101,6 +101,43 @@
       "name": "Japanese",
       "level": "Business",
       "certification": "JLPT N2"
+    }
+  },
+  "projects": {
+    "intro": "A selection of personal projects I've built to learn new languages, explore systems programming, and go deep into how stuff works. Source code is hosted on GitHub and GitLab.",
+    "openRepository": "Repository",
+    "liveDemo": "Live demo",
+    "stats": {
+      "loading": "Loading stats…",
+      "unavailable": "Stats unavailable",
+      "updated": "Updated {date}",
+      "stars": "stars"
+    },
+    "items": {
+      "veloVista": {
+        "description": "An iOS and watchOS app, built entirely in SwiftUI following modern Apple patterns and practices, that saves bike rides from Apple's Fitness app, manages multiple bikes, and tracks their maintenance items."
+      },
+      "rsTorrent": {
+        "description": "A BitTorrent client written in Rust for educational purposes, exploring peer-to-peer networking and binary protocol parsing."
+      },
+      "interpreterGo": {
+        "description": "My take on the well-known 'Writing An Interpreter In Go' book: a lexer, parser and evaluator for a small custom language."
+      },
+      "gitGud": {
+        "description": "An experimental terminal user interface for browsing and interacting with Git repositories, written in Go."
+      },
+      "simpleFormBuilder": {
+        "description": "A simple, schema-driven form builder and generator for React applications."
+      },
+      "nyaaBrowser": {
+        "description": "A desktop app to browse and search recently added torrents on Nyaa.si."
+      },
+      "focalStats": {
+        "description": "A small utility to compute focal statistics for a single picture or a whole folder of images."
+      },
+      "portfolio": {
+        "description": "This very site — a Windows XP-themed personal portfolio built with Nuxt and Vue, complete with a taskbar, start menu, and live GitHub/GitLab project stats."
+      }
     }
   }
 }
