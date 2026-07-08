@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// Set by the GitHub Pages workflow to the repo's Pages path (e.g. "/portfolio/"),
-// or "" once a custom domain is configured. Defaults to "/" for local dev.
-const baseURL = process.env.NUXT_APP_BASE_URL || "/";
+// Set by the GitHub Pages workflow to the repo's Pages path (e.g. "/portfolio",
+// without a trailing slash), or "" once a custom domain is configured.
+// Defaults to "/" for local dev. Normalized to always end with "/" since it's
+// concatenated directly into asset hrefs below.
+const rawBaseURL = process.env.NUXT_APP_BASE_URL || "/";
+const baseURL = rawBaseURL.endsWith("/") ? rawBaseURL : `${rawBaseURL}/`;
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
