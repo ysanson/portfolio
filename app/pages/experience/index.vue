@@ -8,6 +8,7 @@ interface ExperienceEntry extends TimelineItem {
     highlights?: string[];
     tags?: string[];
     website?: string;
+    detailsLink?: string;
 }
 
 const { t, tm, rt } = useI18n();
@@ -26,6 +27,7 @@ const experiences = computed<ExperienceEntry[]>(() => [
         highlights: highlightsOf("experience.corpy.highlights"),
         tags: ["Vue", "Python / FastAPI", "Golang", "Data processing"],
         website: "https://corpy.co.jp",
+        detailsLink: "/experience/corpy",
     },
     {
         date: t("experience.sncf.period"),
@@ -182,6 +184,16 @@ const education = computed(() => ({
                             :key="tag"
                             :label="tag"
                             variant="subtle"
+                        />
+                    </div>
+                    <div v-if="item.detailsLink" class="mt-2">
+                        <UButton
+                            :to="item.detailsLink"
+                            icon="i-heroicons-arrow-top-right-on-square"
+                            color="secondary"
+                            variant="subtle"
+                            size="sm"
+                            :label="t('experience.learnMore')"
                         />
                     </div>
                 </template>

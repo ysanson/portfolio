@@ -6,6 +6,7 @@
   },
   "experience": {
     "teamSize": "Team size: ",
+    "learnMore": "Learn more",
     "corpy": {
       "role": "Full Stack Engineer",
       "period": "Jan 2024 – Present",
@@ -69,10 +70,26 @@
       "adaptability": "Adaptability"
     },
     "soft": {
-      "communication": ["Clear reporting", "Active listening", "Technical writing", "Knowledge transfer"],
-      "teamwork": ["Technical leadership", "Collaboration", "Peer programming", "Agile/Scrum methods"],
-      "problemSolving": ["Critical thinking", "Self-learning"],
-      "adaptability": ["Continuous learning", "Priority management"]
+      "communication": [
+        "Clear reporting",
+        "Active listening",
+        "Technical writing",
+        "Knowledge transfer"
+      ],
+      "teamwork": [
+        "Technical leadership",
+        "Collaboration",
+        "Peer programming",
+        "Agile/Scrum methods"
+      ],
+      "problemSolving": [
+        "Critical thinking",
+        "Self-learning"
+      ],
+      "adaptability": [
+        "Continuous learning",
+        "Priority management"
+      ]
     }
   },
   "education": {
@@ -101,6 +118,260 @@
       "name": "Japanese",
       "level": "Business",
       "certification": "JLPT N2"
+    }
+  },
+  "corpyPage": {
+    "back": "Back",
+    "overview": {
+      "title": "Corpy & Co",
+      "intro": "Corpy & Co. builds AI quality management software for regulated and quality-critical industries — manufacturing, medical devices, and beyond. Since January 2024, I've worked as a full-stack engineer on Confide, Corpy's flagship product suite, alongside R&D, infrastructure, and QA work. Here's a closer look at the two applications I contribute to the most.",
+      "mlops": {
+        "name": "Confide MLOps",
+        "tagline": "One platform for the whole AI lifecycle.",
+        "blurb": "An MLOps and AI quality management platform covering the full lifecycle: data management, annotation, model training, and production operations — built for industries where model decisions need to be explainable and auditable.",
+        "cta": "Learn more"
+      },
+      "cms": {
+        "name": "Confide Content",
+        "tagline": "A CMS that reads its own documents.",
+        "blurb": "A content hub that combines document storage and organization with AI-powered search, chat, and low-code workflow automation, turning uploaded files into something you can question and act on instead of a static archive.",
+        "cta": "Learn more"
+      }
+    },
+    "mlops": {
+      "title": "Confide MLOps",
+      "tagline": "One platform for the whole AI lifecycle.",
+      "intro": "Confide is Corpy & Co.'s MLOps and AI quality management platform — one place to take a model from raw data through training, evaluation, and operations, with QA and explainability built in rather than bolted on.",
+      "gapTitle": "Shipping a model is easy. Operating one you can trust isn't.",
+      "gap": "Most ML work dies in the gap between a notebook and production: data scattered across folders, transforms nobody can reproduce, models with no record of what they were trained on. Confide closes that gap by running the whole lifecycle — data, training, evaluation, operations — through one platform where everything is versioned and traceable.",
+      "deploymentNote": "Because it serves quality-critical industries, deployment isn't just the cloud: releases ship the same way to internal staging and production, and to offline client machines with no direct network access.",
+      "lifecycle": {
+        "title": "The AI Lifecycle",
+        "stages": {
+          "data": {
+            "label": "Data Management",
+            "description": "Assets are uploaded, versioned, and tagged into annotation sets — a browsable, searchable dataset instead of loose folders. A set can evolve, with new batches added or bad images pruned, without ever losing track of what a given model was trained on."
+          },
+          "annotation": {
+            "label": "Annotation",
+            "description": "An embedded Label Studio editor handles manual work, bounding boxes, polygons, and class tags included. For bulk coverage, prompt-based auto-annotation takes a text description of what to detect and runs a model across the whole dataset with a confidence threshold, turning labeling from per-image work into a supervised batch job."
+          },
+          "analysis": {
+            "label": "Analysis",
+            "description": "Before any training starts, exploratory data analysis scores a dataset on completeness, consistency, and accuracy, with a clustering view and AI-generated insights that read the plots for you — well-separated clusters, balanced classes, and what that means for the model about to be trained."
+          },
+          "training": {
+            "label": "Model Training & Evaluation",
+            "description": "Training runs are versioned and tied back to the exact data that produced them. Results come back as confusion matrices, confidence distributions, per-class precision-recall curves, and a blunt best-and-worst class ranking, with evaluation and explainability runs one click away from the same screen."
+          },
+          "operations": {
+            "label": "Operations",
+            "description": "A trained model is packaged into a versioned container image — the same release unit whether it ships to staging, production, or a fully offline client machine. Operations screens track which version is live where, next to the metrics and explainability output for that release."
+          }
+        }
+      },
+      "modules": {
+        "title": "Three Modules",
+        "items": {
+          "dm": {
+            "code": "DM",
+            "name": "Data Management",
+            "description": "Manages, analyzes, and processes data — exploratory analysis, preprocessing, and versioned pipelines that keep the lineage of every transform."
+          },
+          "mm": {
+            "code": "MM",
+            "name": "Model Management",
+            "description": "Manages, trains, and evaluates models, so every version carries a traceable history of what it was trained on and how it scored."
+          },
+          "xai": {
+            "code": "XAI",
+            "name": "Explainability",
+            "description": "Explainable-AI tooling built into operations, because in quality-critical deployments, “the model said so” isn't an answer."
+          }
+        }
+      },
+      "features": {
+        "title": "Key Features",
+        "items": {
+          "autoAnnotation": {
+            "title": "Prompt-based auto-annotation",
+            "description": "Describing a class in plain text is enough — a detection model runs it across the whole dataset with a confidence threshold, and everything above that threshold is queued for human review instead of being written straight to the dataset."
+          },
+          "anomalyGeneration": {
+            "title": "Anomaly generation",
+            "description": "Factories produce thousands of good parts and almost no defective ones, which starves anomaly detection of training data. This tool composites real defect patches onto normal images with Poisson blending — position, size, brightness, and blend strength are all tunable — turning a handful of real defects into a usable training set."
+          },
+          "explainability": {
+            "title": "Explainability (XAI)",
+            "description": "Explainability tooling sits next to evaluation metrics in the operations screens, one click from any training result, because in regulated industries a model's decision needs a defensible reason, not just a confidence score."
+          }
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": {
+          "control": {
+            "title": "Control plane",
+            "description": "The web and API layer registers each module and holds the metadata records for the whole platform."
+          },
+          "execution": {
+            "title": "Execution plane",
+            "description": "Long-running work never blocks a request: pipeline runs, training, and evaluation execute on a fleet of asynchronous workers."
+          },
+          "artifacts": {
+            "title": "Artifacts",
+            "description": "Everything that crosses an environment boundary is an artifact — versioned container images in a registry, pipeline configs in the database, and lineage logs tying every model version back to its dataset snapshot and deployment event."
+          }
+        }
+      },
+      "engineering": {
+        "title": "Engineering Decisions",
+        "items": {
+          "pipelines": {
+            "title": "Pipelines are versioned database objects",
+            "description": "A preprocessing pipeline isn't a script someone ran once — it's a config stored in the database with a version, a parent it can inherit from, and the dataset it belongs to. That makes every run re-runnable and answers the lineage question: which transforms, in which version, produced this data."
+          },
+          "modularCore": {
+            "title": "One AI core, installable in pieces",
+            "description": "The AI core is modularized into an installable package with optional add-ons per module, so a deployment only installs what it needs. Missing features degrade to “feature disabled” instead of a crash, and client installs stay small because they only carry the modules they use."
+          },
+          "releaseUnit": {
+            "title": "The release unit is an image, not source code",
+            "description": "A passing build produces a versioned container image pushed to a registry; staging and production run containers only, with no source code on the box. For offline client machines, the same images travel as saved archives and load without touching the internet."
+          },
+          "smallestMachine": {
+            "title": "Designed for the smallest machine, not the biggest",
+            "description": "Realistic datasets used to kill pipeline workers on 16GB machines — images loaded eagerly into memory, transforms piling up in lists. The fix was architectural: pass paths instead of arrays, load lazily inside transforms, stream per asset, and write to temp files. Client hardware is a constraint, not an afterthought."
+          }
+        }
+      },
+      "contribution": {
+        "title": "My Contribution",
+        "intro": "I work on Confide MLOps as a full-stack engineer, moving between the frontend, backend, and the infrastructure that ships it.",
+        "highlights": [
+          "I built the licensing system that ties activation to cryptographic hardware fingerprints and validates over-the-air, covering both cloud and fully offline deployments.",
+          "I own the CI/CD pipeline for the platform, which cut deployment time significantly and gave the sales team a clearer way to demo builds to prospects.",
+          "I helped build an image inference pipeline targeting sub-20ms inference and response time, for near real-time quality checks on production lines.",
+          "I created a custom installer for offline deployments, so the platform can be set up entirely inside a client's own network with no external dependency."
+        ]
+      }
+    },
+    "cms": {
+      "title": "Confide Content",
+      "tagline": "A CMS that reads its own documents.",
+      "intro": "Confide Content is Corpy & Co.'s content hub for document-heavy teams: a place to store and organize files, then layer AI-powered search, chat, and low-code automation directly on top of them.",
+      "gapTitle": "Most enterprise CMS platforms are static storage — the documents just sit there.",
+      "gap": "Companies keep thousands of contracts, specs, and manuals in systems that can only find them by filename, so the knowledge inside stays locked away and the work around those documents — extracting fields, comparing vendors, translating, summarizing — stays manual. Confide Content puts document storage, retrieval-augmented search, and workflow automation behind one platform instead of three separate tools.",
+      "deploymentNote": "It ships as three independent modules — CMS, Search & AI, and Workflow — so a client can enable only the combination it needs, all behind enterprise SSO/SAML authentication and role-based access control.",
+      "lifecycle": {
+        "title": "The Content Lifecycle",
+        "stages": {
+          "upload": {
+            "label": "Upload & Organize",
+            "description": "Teams upload and organize content — vendor PDFs, spreadsheets, images — with versioning, metadata tagging, and access control applied from the very first file."
+          },
+          "conversion": {
+            "label": "Conversion",
+            "description": "An asynchronous pipeline converts PDFs and spreadsheets into browser-viewable formats and extracts the underlying text for the AI layer to work with."
+          },
+          "retrieval": {
+            "label": "Indexing",
+            "description": "Documents are chunked and embedded into a per-tenant index, Japanese included, so every file becomes searchable by meaning rather than by filename."
+          },
+          "searchAi": {
+            "label": "Search & Chat",
+            "description": "Chat and search run against that index, and every AI answer carries a confidence score and citations back to the source documents."
+          },
+          "workflow": {
+            "label": "Workflow Automation",
+            "description": "OCR, translation, and summarization blocks can be wired into a graph pointed at a folder, and the resulting pipeline runs in the background, resuming automatically if a step fails."
+          }
+        }
+      },
+      "modules": {
+        "title": "Three Modules",
+        "items": {
+          "cms": {
+            "code": "CMS",
+            "name": "File Management",
+            "description": "Storage with versioning, metadata tagging, org/user/permission management, and object casting — turning a file into a task, or a page into a PDF."
+          },
+          "searchAi": {
+            "code": "AI",
+            "name": "Chat & Search",
+            "description": "Retrieval-augmented chat and hybrid search over everything a user is allowed to see, with citations linking every answer back to its sources."
+          },
+          "workflow": {
+            "code": "WF",
+            "name": "Automated Pipelines",
+            "description": "A low-code node graph for document-heavy processes — extracting fields from vendor PDFs, generating comparison matrices, chaining OCR into translation into summarization."
+          }
+        }
+      },
+      "features": {
+        "title": "Key Features",
+        "items": {
+          "pageEditor": {
+            "title": "Block-based Page Editor",
+            "description": "A block-based editor lets teams author pages directly inside the CMS, next to the files they reference, while PDFs open in an in-browser viewer converted by the async pipeline — nobody has to download a file just to read it."
+          },
+          "ragChat": {
+            "title": "RAG Chat with Cited Sources",
+            "description": "Any file or folder can become a conversation: the chat panel answers strictly from the documents it's scoped to, with sources pinned above the answer so a claim can always be traced back to its origin."
+          },
+          "workflowBuilder": {
+            "title": "Low-code Workflow Builder",
+            "description": "The workflow builder is a node graph of model nodes (object detection, OCR, classification, content moderation), transforms (crop, text extraction, frame sampling), and logic nodes (confidence filters, tagging), wired from inputs to outputs and run against folders of content."
+          },
+          "accessControl": {
+            "title": "Enterprise Access Control",
+            "description": "Every page keeps an activity log and a restorable version history. Sharing is restricted by default and granted per person or group with explicit roles — the same access model the retrieval layer enforces when the AI answers."
+          }
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": {
+          "core": {
+            "title": "CMS Core",
+            "description": "Owns storage, versioning, metadata, and access control for every document in the platform."
+          },
+          "retrieval": {
+            "title": "Retrieval Service",
+            "description": "Runs as its own service behind a hardened gateway that terminates TLS and validates tokens, with the retrieval API on a private network and separate stores for job metadata and the chunk index."
+          },
+          "action": {
+            "title": "Action Layer",
+            "description": "Sits above both: the CMS only talks to workflows through versioned action contracts, and every execution writes to an authoritative trace and audit history."
+          }
+        }
+      },
+      "outcome": {
+        "title": "Outcome",
+        "items": {
+          "citedSources": {
+            "title": "Every Answer Cited",
+            "description": "AI responses pin their sources above the answer, so trust doesn't rely on taking the model's word for it — a citation can always be checked against the source document."
+          },
+          "graphNotCode": {
+            "title": "A Graph Instead of a Codebase",
+            "description": "Document processes that used to mean bespoke scripts — moderation, OCR, tagging — become a small node graph that anyone can read, rewire, and rerun."
+          },
+          "perTenant": {
+            "title": "Isolation by Default",
+            "description": "Access control reaches into the AI layer itself: retrieval only surfaces what a given user is allowed to see, and each client's data lives in its own index."
+          }
+        }
+      },
+      "contribution": {
+        "title": "My Contribution",
+        "intro": "My work on Confide Content has been entirely on the frontend, focused on how people navigate and read what's stored in the platform.",
+        "highlights": [
+          "I built the folder tree used to browse and organize content across the platform.",
+          "I built the file viewer that renders documents in-browser, including the PDF viewing experience.",
+          "I implemented general file navigation across the CMS, from folder structure to per-file actions."
+        ]
+      }
     }
   },
   "projects": {

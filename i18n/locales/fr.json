@@ -6,6 +6,7 @@
   },
   "experience": {
     "teamSize": "Composition de l'équipe : ",
+    "learnMore": "En savoir plus",
     "corpy": {
       "role": "Ingénieur Full Stack",
       "period": "Janvier 2024 – Présent",
@@ -81,8 +82,14 @@
         "Programmation en binôme",
         "Méthodes agile/scrum"
       ],
-      "problemSolving": ["Esprit critique", "Autoformation"],
-      "adaptability": ["Apprentissage continu", "Gestion des priorités"]
+      "problemSolving": [
+        "Esprit critique",
+        "Autoformation"
+      ],
+      "adaptability": [
+        "Apprentissage continu",
+        "Gestion des priorités"
+      ]
     }
   },
   "education": {
@@ -111,6 +118,260 @@
       "name": "Japonais",
       "level": "Professionnel",
       "certification": "JLPT N2"
+    }
+  },
+  "corpyPage": {
+    "back": "Retour",
+    "overview": {
+      "title": "Corpy & Co",
+      "intro": "Corpy & Co. développe des logiciels de gestion de la qualité IA pour des industries réglementées et exigeantes en qualité — l'industrie manufacturière, le dispositif médical, et au-delà. Depuis janvier 2024, je travaille comme ingénieur full-stack sur Confide, la suite phare de Corpy, en parallèle de projets de R&D, d'infrastructure et de QA. Voici un aperçu plus détaillé des deux applications auxquelles je contribue le plus.",
+      "mlops": {
+        "name": "Confide MLOps",
+        "tagline": "Une seule plateforme pour tout le cycle de vie de l'IA.",
+        "blurb": "Une plateforme MLOps et de gestion de la qualité IA couvrant tout le cycle de vie : gestion des données, annotation, entraînement des modèles et opérations en production — conçue pour les industries où les décisions des modèles doivent être explicables et auditables.",
+        "cta": "En savoir plus"
+      },
+      "cms": {
+        "name": "Confide Content",
+        "tagline": "Un CMS qui lit ses propres documents.",
+        "blurb": "Un hub de contenu qui combine le stockage et l'organisation de documents avec la recherche et le chat propulsés par l'IA, ainsi que l'automatisation de workflows low-code, transformant les fichiers importés en quelque chose que l'on peut interroger et exploiter plutôt qu'une simple archive statique.",
+        "cta": "En savoir plus"
+      }
+    },
+    "mlops": {
+      "title": "Confide MLOps",
+      "tagline": "Une seule plateforme pour tout le cycle de vie de l'IA.",
+      "intro": "Confide est la plateforme MLOps et de gestion de la qualité IA de Corpy & Co. — un seul endroit pour faire passer un modèle des données brutes à l'entraînement, à l'évaluation puis à l'exploitation, avec la QA et l'explicabilité intégrées dès le départ plutôt qu'ajoutées après coup.",
+      "gapTitle": "Livrer un modèle est facile. En exploiter un de confiance ne l'est pas.",
+      "gap": "La plupart des projets ML meurent dans l'écart entre un notebook et la production : des données éparpillées dans des dossiers, des transformations que personne ne peut reproduire, des modèles sans aucune trace de ce sur quoi ils ont été entraînés. Confide comble cet écart en faisant passer tout le cycle de vie par une seule plateforme où chaque dataset, chaque exécution et chaque version livrée sont versionnés et traçables.",
+      "deploymentNote": "Comme la plateforme sert des industries exigeantes en qualité, le déploiement ne se limite pas au cloud : les versions sont livrées de la même façon en staging interne, en production, et sur des machines clientes entièrement hors-ligne, sans accès réseau direct.",
+      "lifecycle": {
+        "title": "Le cycle de vie de l'IA",
+        "stages": {
+          "data": {
+            "label": "Gestion des données",
+            "description": "Les images sont importées, versionnées et taguées en jeux d'annotation — un dataset consultable et cherchable plutôt que des dossiers épars. Chaque jeu peut évoluer, avec de nouveaux lots ajoutés ou des images défectueuses retirées, sans jamais perdre la trace de ce sur quoi un modèle donné a été entraîné."
+          },
+          "annotation": {
+            "label": "Annotation",
+            "description": "Un éditeur Label Studio intégré prend en charge le travail manuel, boîtes englobantes, polygones et tags de classe compris. Pour couvrir de gros volumes, l'auto-annotation par prompt part d'une description textuelle de ce qu'il faut détecter et exécute un modèle sur tout le dataset avec un seuil de confiance, transformant l'étiquetage d'un travail image par image en un travail de lot supervisé par un humain."
+          },
+          "analysis": {
+            "label": "Analyse",
+            "description": "Avant qu'un entraînement ne démarre, une analyse exploratoire évalue un dataset selon son exhaustivité, sa cohérence et sa précision, avec une vue de clustering et des insights générés par IA qui interprètent les graphiques à votre place — classes bien séparées, classes équilibrées, et ce que cela signifie pour le modèle sur le point d'être entraîné."
+          },
+          "training": {
+            "label": "Entraînement et évaluation des modèles",
+            "description": "Les entraînements sont versionnés et reliés précisément aux données qui les ont produits. Les résultats reviennent sous forme de matrices de confusion, de distributions de confiance, de courbes précision-rappel par classe, et d'un classement franc des meilleures et pires classes, avec l'évaluation et l'explicabilité à un clic du même écran."
+          },
+          "operations": {
+            "label": "Opérations",
+            "description": "Un modèle entraîné est empaqueté dans une image de conteneur versionnée — la même unité de livraison qu'elle parte en staging, en production, ou sur une machine cliente entièrement hors-ligne. Les écrans d'opérations indiquent quelle version tourne où, à côté des métriques et de la sortie d'explicabilité de cette version."
+          }
+        }
+      },
+      "modules": {
+        "title": "Trois modules",
+        "items": {
+          "dm": {
+            "code": "DM",
+            "name": "Gestion des données",
+            "description": "Gère, analyse et traite les données — analyse exploratoire, prétraitement, et pipelines versionnés qui conservent la lignée de chaque transformation."
+          },
+          "mm": {
+            "code": "MM",
+            "name": "Gestion des modèles",
+            "description": "Gère, entraîne et évalue les modèles, si bien que chaque version porte un historique traçable de ce sur quoi elle a été entraînée et de son score."
+          },
+          "xai": {
+            "code": "XAI",
+            "name": "Explicabilité",
+            "description": "Des outils d'IA explicable intégrés aux opérations, car dans les déploiements exigeants en qualité, « c'est le modèle qui l'a décidé » n'est pas une réponse acceptable."
+          }
+        }
+      },
+      "features": {
+        "title": "Fonctionnalités clés",
+        "items": {
+          "autoAnnotation": {
+            "title": "Auto-annotation par prompt",
+            "description": "Décrire une classe en texte libre suffit — un modèle de détection l'applique à tout le dataset avec un seuil de confiance, et tout ce qui dépasse ce seuil est mis en file d'attente pour une revue humaine plutôt que d'être écrit directement dans le dataset."
+          },
+          "anomalyGeneration": {
+            "title": "Génération d'anomalies",
+            "description": "Les usines produisent des milliers de pièces bonnes et presque aucune pièce défectueuse, ce qui prive la détection d'anomalies de données d'entraînement. Cet outil compose de vrais patchs de défauts sur des images normales par fusion de Poisson — position, taille, luminosité et intensité du mélange sont tous réglables — transformant une poignée de défauts réels en un jeu d'entraînement exploitable."
+          },
+          "explainability": {
+            "title": "Explicabilité (XAI)",
+            "description": "Les outils d'explicabilité sont intégrés à côté des métriques d'évaluation dans les écrans d'opérations, à un clic de n'importe quel résultat d'entraînement, car dans les industries réglementées, la décision d'un modèle a besoin d'une justification défendable, pas seulement d'un score de confiance."
+          }
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": {
+          "control": {
+            "title": "Plan de contrôle",
+            "description": "La couche web et API enregistre chaque module et détient les métadonnées de toute la plateforme."
+          },
+          "execution": {
+            "title": "Plan d'exécution",
+            "description": "Le travail long ne bloque jamais une requête : les exécutions de pipeline, l'entraînement et l'évaluation tournent sur une flotte de workers asynchrones."
+          },
+          "artifacts": {
+            "title": "Artefacts",
+            "description": "Tout ce qui franchit une frontière d'environnement est un artefact — images de conteneur versionnées dans un registre, configurations de pipeline en base de données, et journaux de traçabilité reliant chaque version de modèle à l'instantané de dataset et à l'événement de déploiement dont elle provient."
+          }
+        }
+      },
+      "engineering": {
+        "title": "Décisions d'ingénierie",
+        "items": {
+          "pipelines": {
+            "title": "Les pipelines sont des objets de base de données versionnés",
+            "description": "Un pipeline de prétraitement n'est pas un script exécuté une fois par quelqu'un — c'est une configuration stockée en base de données, avec une version, un parent dont elle peut hériter, et le dataset auquel elle appartient. Cela rend chaque exécution rejouable et répond à la question de traçabilité : quelles transformations, dans quelle version, ont produit ces données."
+          },
+          "modularCore": {
+            "title": "Un seul cœur IA, installable par morceaux",
+            "description": "Le cœur IA est modularisé en un paquet installable avec des modules complémentaires optionnels, si bien qu'un déploiement n'installe que ce dont il a besoin. Une fonctionnalité manquante se dégrade en « fonctionnalité désactivée » plutôt qu'en crash, et les installations clientes restent légères puisqu'elles ne transportent que les modules utilisés."
+          },
+          "releaseUnit": {
+            "title": "L'unité de livraison est une image, pas du code source",
+            "description": "Une build qui passe produit une image de conteneur versionnée poussée vers un registre ; le staging et la production ne font tourner que des conteneurs, sans code source sur la machine. Pour les machines clientes hors-ligne, les mêmes images voyagent sous forme d'archives et se chargent sans toucher à internet."
+          },
+          "smallestMachine": {
+            "title": "Conçu pour la plus petite machine, pas la plus grosse",
+            "description": "Des datasets réalistes ont déjà fait planter des workers de pipeline sur des machines à 16 Go — images chargées en mémoire de façon anticipée, transformations s'accumulant dans des listes. La correction a été architecturale : passer des chemins plutôt que des tableaux, charger paresseusement à l'intérieur des transformations, streamer par asset, et écrire dans des fichiers temporaires. Le matériel client est une contrainte, pas une réflexion après coup."
+          }
+        }
+      },
+      "contribution": {
+        "title": "Ma contribution",
+        "intro": "Je travaille sur Confide MLOps en tant qu'ingénieur full-stack, entre le frontend, le backend et l'infrastructure qui permet de le livrer.",
+        "highlights": [
+          "J'ai développé le système de licence qui lie l'activation à des empreintes matérielles cryptographiques et valide en OTA, pour les déploiements cloud comme entièrement hors-ligne.",
+          "Je pilote le pipeline CI/CD de la plateforme, ce qui a considérablement réduit le temps de déploiement et permis à l'équipe commerciale de démontrer les versions plus facilement aux prospects.",
+          "J'ai participé à la construction d'un pipeline d'inférence d'images visant un temps d'inférence et de réponse inférieur à 20 ms, pour des contrôles qualité quasi temps réel sur les lignes de production.",
+          "J'ai créé un installeur personnalisé pour les déploiements hors-ligne, permettant d'installer la plateforme entièrement dans le réseau du client, sans dépendance externe."
+        ]
+      }
+    },
+    "cms": {
+      "title": "Confide Content",
+      "tagline": "Un CMS qui lit ses propres documents.",
+      "intro": "Confide Content est le hub de contenu de Corpy & Co. pour les équipes qui manipulent beaucoup de documents : un endroit où stocker et organiser des fichiers, puis superposer directement recherche, chat et automatisation low-code propulsés par l'IA.",
+      "gapTitle": "La plupart des CMS d'entreprise ne sont que du stockage statique — les documents restent inertes.",
+      "gap": "Les entreprises conservent des milliers de contrats, de spécifications et de manuels dans des systèmes qui ne savent les retrouver que par leur nom de fichier, si bien que la connaissance qu'ils contiennent reste enfermée et que le travail autour de ces documents — extraire des champs, comparer des fournisseurs, traduire, résumer — reste manuel. Confide Content réunit le stockage documentaire, la recherche augmentée par récupération (RAG) et l'automatisation de workflows dans une seule plateforme, au lieu de trois outils séparés.",
+      "deploymentNote": "Elle est livrée sous forme de trois modules indépendants — CMS, Search & AI, et Workflow — pour qu'un client n'active que la combinaison dont il a besoin, le tout derrière une authentification d'entreprise SSO/SAML et un contrôle d'accès basé sur les rôles.",
+      "lifecycle": {
+        "title": "Le cycle de vie du contenu",
+        "stages": {
+          "upload": {
+            "label": "Import & Organisation",
+            "description": "Les équipes importent et organisent le contenu — PDF fournisseurs, tableurs, images — avec versionnage, tags de métadonnées et contrôle d'accès dès le premier fichier."
+          },
+          "conversion": {
+            "label": "Conversion",
+            "description": "Un pipeline asynchrone convertit les PDF et tableurs en formats consultables dans le navigateur et en extrait le texte sur lequel la couche IA va travailler."
+          },
+          "retrieval": {
+            "label": "Indexation",
+            "description": "Les documents sont découpés en fragments et vectorisés dans un index propre à chaque client, japonais compris, si bien que chaque fichier devient cherchable par le sens plutôt que par son nom."
+          },
+          "searchAi": {
+            "label": "Recherche & Chat",
+            "description": "Le chat et la recherche s'appuient sur cet index, et chaque réponse de l'IA porte un score de confiance et des citations vers les documents source."
+          },
+          "workflow": {
+            "label": "Automatisation de workflows",
+            "description": "Des blocs d'OCR, de traduction et de résumé peuvent être assemblés en graphe, pointés vers un dossier, et le pipeline qui en résulte tourne en arrière-plan, en reprenant automatiquement si une étape échoue."
+          }
+        }
+      },
+      "modules": {
+        "title": "Trois modules",
+        "items": {
+          "cms": {
+            "code": "CMS",
+            "name": "Gestion de fichiers",
+            "description": "Stockage avec versionnage, tags de métadonnées, gestion des organisations/utilisateurs/permissions, et transformation d'objets — faire d'un fichier une tâche, ou d'une page un PDF."
+          },
+          "searchAi": {
+            "code": "AI",
+            "name": "Chat & Recherche",
+            "description": "Chat augmenté par récupération et recherche hybride sur tout ce qu'un utilisateur est autorisé à voir, avec des citations reliant chaque réponse à ses sources."
+          },
+          "workflow": {
+            "code": "WF",
+            "name": "Pipelines automatisés",
+            "description": "Un graphe low-code pour les processus liés aux documents — extraire des champs de PDF fournisseurs, générer des matrices de comparaison, enchaîner OCR, traduction et résumé."
+          }
+        }
+      },
+      "features": {
+        "title": "Fonctionnalités clés",
+        "items": {
+          "pageEditor": {
+            "title": "Éditeur de pages par blocs",
+            "description": "Un éditeur par blocs permet aux équipes de rédiger des pages directement dans le CMS, à côté des fichiers qu'elles référencent, tandis que les PDF s'ouvrent dans une visionneuse intégrée au navigateur, convertie par le pipeline asynchrone — personne n'a besoin de télécharger un fichier juste pour le lire."
+          },
+          "ragChat": {
+            "title": "Chat RAG avec sources citées",
+            "description": "N'importe quel fichier ou dossier peut devenir une conversation : le panneau de chat répond strictement à partir des documents auxquels il est limité, avec les sources épinglées au-dessus de la réponse afin qu'une affirmation puisse toujours être retracée jusqu'à son origine."
+          },
+          "workflowBuilder": {
+            "title": "Constructeur de workflows low-code",
+            "description": "Le constructeur de workflows est un graphe de nœuds de modèles (détection d'objets, OCR, classification, modération de contenu), de transformations (recadrage, extraction de texte, échantillonnage d'images) et de logique (filtres de confiance, tagging), reliés des entrées aux sorties et exécutés sur des dossiers de contenu."
+          },
+          "accessControl": {
+            "title": "Contrôle d'accès d'entreprise",
+            "description": "Chaque page conserve un journal d'activité et un historique de versions restaurable. Le partage est restreint par défaut et accordé par personne ou par groupe avec des rôles explicites — le même modèle d'accès que la couche de récupération applique lorsque l'IA répond."
+          }
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": {
+          "core": {
+            "title": "Cœur CMS",
+            "description": "Détient le stockage, le versionnage, les métadonnées et le contrôle d'accès pour chaque document de la plateforme."
+          },
+          "retrieval": {
+            "title": "Service de récupération",
+            "description": "Fonctionne comme un service à part derrière une passerelle durcie qui termine le TLS et valide les jetons, l'API de récupération elle-même se trouvant sur un réseau privé avec des stockages séparés pour les métadonnées des jobs et l'index de fragments."
+          },
+          "action": {
+            "title": "Couche d'action",
+            "description": "Se situe au-dessus des deux : le CMS ne parle aux workflows qu'à travers des contrats d'action versionnés, et chaque exécution écrit dans un historique de traçabilité et d'audit faisant autorité."
+          }
+        }
+      },
+      "outcome": {
+        "title": "Résultat",
+        "items": {
+          "citedSources": {
+            "title": "Chaque réponse citée",
+            "description": "Les réponses de l'IA épinglent leurs sources au-dessus de la réponse, si bien que la confiance ne repose pas sur la seule parole du modèle — une citation peut toujours être vérifiée par rapport au document source."
+          },
+          "graphNotCode": {
+            "title": "Un graphe plutôt qu'une base de code",
+            "description": "Des processus documentaires qui nécessitaient autrefois des scripts sur mesure — modération, OCR, tagging — deviennent un petit graphe que n'importe qui peut lire, réagencer et relancer."
+          },
+          "perTenant": {
+            "title": "Isolation par défaut",
+            "description": "Le contrôle d'accès s'étend jusque dans la couche IA : la récupération ne fait remonter que ce qu'un utilisateur donné est autorisé à voir, et les données de chaque client restent dans son propre index."
+          }
+        }
+      },
+      "contribution": {
+        "title": "Ma contribution",
+        "intro": "Mon travail sur Confide Content s'est fait entièrement côté frontend, centré sur la façon dont les utilisateurs naviguent et lisent ce qui est stocké dans la plateforme.",
+        "highlights": [
+          "J'ai développé l'arborescence de dossiers utilisée pour parcourir et organiser le contenu sur la plateforme.",
+          "J'ai développé la visionneuse de fichiers qui affiche les documents dans le navigateur, y compris l'expérience de lecture des PDF.",
+          "J'ai implémenté la navigation générale dans les fichiers du CMS, de la structure des dossiers aux actions par fichier."
+        ]
+      }
     }
   },
   "projects": {
