@@ -1,4 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// Set by the GitHub Pages workflow to the repo's Pages path (e.g. "/portfolio/"),
+// or "" once a custom domain is configured. Defaults to "/" for local dev.
+const baseURL = process.env.NUXT_APP_BASE_URL || "/";
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
@@ -30,12 +34,15 @@ export default defineNuxtConfig({
     defaultLocale: "en",
   },
   app: {
+    baseURL,
     head: {
       title: "Yvan SANSON",
       htmlAttrs: {
         lang: "en",
       },
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: `${baseURL}favicon.ico` },
+      ],
     },
   },
 });
