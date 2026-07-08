@@ -132,9 +132,10 @@
         "cta": "En savoir plus"
       },
       "cms": {
-        "name": "Confide CMS",
-        "tagline": "Bientôt disponible",
-        "blurb": "L'application de gestion de contenu et de configuration de Confide. Détails à venir."
+        "name": "Confide Content",
+        "tagline": "Un CMS qui lit ses propres documents.",
+        "blurb": "Un hub de contenu qui combine le stockage et l'organisation de documents avec la recherche et le chat propulsés par l'IA, ainsi que l'automatisation de workflows low-code, transformant les fichiers importés en quelque chose que l'on peut interroger et exploiter plutôt qu'une simple archive statique.",
+        "cta": "En savoir plus"
       }
     },
     "mlops": {
@@ -252,6 +253,123 @@
           "Je pilote le pipeline CI/CD de la plateforme, ce qui a considérablement réduit le temps de déploiement et permis à l'équipe commerciale de démontrer les versions plus facilement aux prospects.",
           "J'ai participé à la construction d'un pipeline d'inférence d'images visant un temps d'inférence et de réponse inférieur à 20 ms, pour des contrôles qualité quasi temps réel sur les lignes de production.",
           "J'ai créé un installeur personnalisé pour les déploiements hors-ligne, permettant d'installer la plateforme entièrement dans le réseau du client, sans dépendance externe."
+        ]
+      }
+    },
+    "cms": {
+      "title": "Confide Content",
+      "tagline": "Un CMS qui lit ses propres documents.",
+      "intro": "Confide Content est le hub de contenu de Corpy & Co. pour les équipes qui manipulent beaucoup de documents : un endroit où stocker et organiser des fichiers, puis superposer directement recherche, chat et automatisation low-code propulsés par l'IA.",
+      "gapTitle": "La plupart des CMS d'entreprise ne sont que du stockage statique — les documents restent inertes.",
+      "gap": "Les entreprises conservent des milliers de contrats, de spécifications et de manuels dans des systèmes qui ne savent les retrouver que par leur nom de fichier, si bien que la connaissance qu'ils contiennent reste enfermée et que le travail autour de ces documents — extraire des champs, comparer des fournisseurs, traduire, résumer — reste manuel. Confide Content réunit le stockage documentaire, la recherche augmentée par récupération (RAG) et l'automatisation de workflows dans une seule plateforme, au lieu de trois outils séparés.",
+      "deploymentNote": "Elle est livrée sous forme de trois modules indépendants — CMS, Search & AI, et Workflow — pour qu'un client n'active que la combinaison dont il a besoin, le tout derrière une authentification d'entreprise SSO/SAML et un contrôle d'accès basé sur les rôles.",
+      "lifecycle": {
+        "title": "Le cycle de vie du contenu",
+        "stages": {
+          "upload": {
+            "label": "Import & Organisation",
+            "description": "Les équipes importent et organisent le contenu — PDF fournisseurs, tableurs, images — avec versionnage, tags de métadonnées et contrôle d'accès dès le premier fichier."
+          },
+          "conversion": {
+            "label": "Conversion",
+            "description": "Un pipeline asynchrone convertit les PDF et tableurs en formats consultables dans le navigateur et en extrait le texte sur lequel la couche IA va travailler."
+          },
+          "retrieval": {
+            "label": "Indexation",
+            "description": "Les documents sont découpés en fragments et vectorisés dans un index propre à chaque client, japonais compris, si bien que chaque fichier devient cherchable par le sens plutôt que par son nom."
+          },
+          "searchAi": {
+            "label": "Recherche & Chat",
+            "description": "Le chat et la recherche s'appuient sur cet index, et chaque réponse de l'IA porte un score de confiance et des citations vers les documents source."
+          },
+          "workflow": {
+            "label": "Automatisation de workflows",
+            "description": "Des blocs d'OCR, de traduction et de résumé peuvent être assemblés en graphe, pointés vers un dossier, et le pipeline qui en résulte tourne en arrière-plan, en reprenant automatiquement si une étape échoue."
+          }
+        }
+      },
+      "modules": {
+        "title": "Trois modules",
+        "items": {
+          "cms": {
+            "code": "CMS",
+            "name": "Gestion de fichiers",
+            "description": "Stockage avec versionnage, tags de métadonnées, gestion des organisations/utilisateurs/permissions, et transformation d'objets — faire d'un fichier une tâche, ou d'une page un PDF."
+          },
+          "searchAi": {
+            "code": "AI",
+            "name": "Chat & Recherche",
+            "description": "Chat augmenté par récupération et recherche hybride sur tout ce qu'un utilisateur est autorisé à voir, avec des citations reliant chaque réponse à ses sources."
+          },
+          "workflow": {
+            "code": "WF",
+            "name": "Pipelines automatisés",
+            "description": "Un graphe low-code pour les processus liés aux documents — extraire des champs de PDF fournisseurs, générer des matrices de comparaison, enchaîner OCR, traduction et résumé."
+          }
+        }
+      },
+      "features": {
+        "title": "Fonctionnalités clés",
+        "items": {
+          "pageEditor": {
+            "title": "Éditeur de pages par blocs",
+            "description": "Un éditeur par blocs permet aux équipes de rédiger des pages directement dans le CMS, à côté des fichiers qu'elles référencent, tandis que les PDF s'ouvrent dans une visionneuse intégrée au navigateur, convertie par le pipeline asynchrone — personne n'a besoin de télécharger un fichier juste pour le lire."
+          },
+          "ragChat": {
+            "title": "Chat RAG avec sources citées",
+            "description": "N'importe quel fichier ou dossier peut devenir une conversation : le panneau de chat répond strictement à partir des documents auxquels il est limité, avec les sources épinglées au-dessus de la réponse afin qu'une affirmation puisse toujours être retracée jusqu'à son origine."
+          },
+          "workflowBuilder": {
+            "title": "Constructeur de workflows low-code",
+            "description": "Le constructeur de workflows est un graphe de nœuds de modèles (détection d'objets, OCR, classification, modération de contenu), de transformations (recadrage, extraction de texte, échantillonnage d'images) et de logique (filtres de confiance, tagging), reliés des entrées aux sorties et exécutés sur des dossiers de contenu."
+          },
+          "accessControl": {
+            "title": "Contrôle d'accès d'entreprise",
+            "description": "Chaque page conserve un journal d'activité et un historique de versions restaurable. Le partage est restreint par défaut et accordé par personne ou par groupe avec des rôles explicites — le même modèle d'accès que la couche de récupération applique lorsque l'IA répond."
+          }
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": {
+          "core": {
+            "title": "Cœur CMS",
+            "description": "Détient le stockage, le versionnage, les métadonnées et le contrôle d'accès pour chaque document de la plateforme."
+          },
+          "retrieval": {
+            "title": "Service de récupération",
+            "description": "Fonctionne comme un service à part derrière une passerelle durcie qui termine le TLS et valide les jetons, l'API de récupération elle-même se trouvant sur un réseau privé avec des stockages séparés pour les métadonnées des jobs et l'index de fragments."
+          },
+          "action": {
+            "title": "Couche d'action",
+            "description": "Se situe au-dessus des deux : le CMS ne parle aux workflows qu'à travers des contrats d'action versionnés, et chaque exécution écrit dans un historique de traçabilité et d'audit faisant autorité."
+          }
+        }
+      },
+      "outcome": {
+        "title": "Résultat",
+        "items": {
+          "citedSources": {
+            "title": "Chaque réponse citée",
+            "description": "Les réponses de l'IA épinglent leurs sources au-dessus de la réponse, si bien que la confiance ne repose pas sur la seule parole du modèle — une citation peut toujours être vérifiée par rapport au document source."
+          },
+          "graphNotCode": {
+            "title": "Un graphe plutôt qu'une base de code",
+            "description": "Des processus documentaires qui nécessitaient autrefois des scripts sur mesure — modération, OCR, tagging — deviennent un petit graphe que n'importe qui peut lire, réagencer et relancer."
+          },
+          "perTenant": {
+            "title": "Isolation par défaut",
+            "description": "Le contrôle d'accès s'étend jusque dans la couche IA : la récupération ne fait remonter que ce qu'un utilisateur donné est autorisé à voir, et les données de chaque client restent dans son propre index."
+          }
+        }
+      },
+      "contribution": {
+        "title": "Ma contribution",
+        "intro": "Mon travail sur Confide Content s'est fait entièrement côté frontend, centré sur la façon dont les utilisateurs naviguent et lisent ce qui est stocké dans la plateforme.",
+        "highlights": [
+          "J'ai développé l'arborescence de dossiers utilisée pour parcourir et organiser le contenu sur la plateforme.",
+          "J'ai développé la visionneuse de fichiers qui affiche les documents dans le navigateur, y compris l'expérience de lecture des PDF.",
+          "J'ai implémenté la navigation générale dans les fichiers du CMS, de la structure des dossiers aux actions par fichier."
         ]
       }
     }

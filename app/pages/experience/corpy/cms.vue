@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import edaAnalysisImg from "~/assets/images/corpy/mlops/eda-analysis.png";
-import autoAnnotationImg from "~/assets/images/corpy/mlops/running-auto-annotation.png";
-import anomalyGenerationImg from "~/assets/images/corpy/mlops/ng-image-generation.png";
+import contentFolderImg from "~/assets/images/corpy/cms/content-folder.png";
+import contentViewerImg from "~/assets/images/corpy/cms/content-viewer.png";
+import contentRagImg from "~/assets/images/corpy/cms/content-rag.png";
+import contentWorkflowImg from "~/assets/images/corpy/cms/content-workflow.png";
 
 const { t, tm, rt } = useI18n();
 
@@ -10,19 +11,24 @@ const highlightsOf = (key: string) =>
 
 const screenshots = [
     {
-        title: "Analysis.png",
-        src: edaAnalysisImg,
-        alt: "Dataset analysis and clustering view",
+        title: "File_manager.png",
+        src: contentFolderImg,
+        alt: "Content folder tree and file manager",
     },
     {
-        title: "Auto_annotation.png",
-        src: autoAnnotationImg,
-        alt: "Prompt-based auto-annotation running",
+        title: "Document_viewer.png",
+        src: contentViewerImg,
+        alt: "In-browser document viewer",
     },
     {
-        title: "Anomaly_generation.png",
-        src: anomalyGenerationImg,
-        alt: "Synthetic anomaly generation output",
+        title: "RAG_chat.png",
+        src: contentRagImg,
+        alt: "RAG chat answering with cited sources",
+    },
+    {
+        title: "Workflow_builder.png",
+        src: contentWorkflowImg,
+        alt: "Low-code workflow builder node graph",
     },
 ];
 
@@ -35,70 +41,63 @@ const openLightbox = (screenshot: (typeof screenshots)[number]) => {
 };
 
 const lifecycleStages = [
-    "data",
-    "annotation",
-    "analysis",
-    "training",
-    "operations",
+    "upload",
+    "conversion",
+    "retrieval",
+    "searchAi",
+    "workflow",
 ];
 const stages = computed(() =>
     lifecycleStages.map((key, index) => ({
         step: index + 1,
-        label: t(`corpyPage.mlops.lifecycle.stages.${key}.label`),
-        description: t(`corpyPage.mlops.lifecycle.stages.${key}.description`),
+        label: t(`corpyPage.cms.lifecycle.stages.${key}.label`),
+        description: t(`corpyPage.cms.lifecycle.stages.${key}.description`),
     })),
 );
 
-const moduleKeys = ["dm", "mm", "xai"];
+const moduleKeys = ["cms", "searchAi", "workflow"];
 const modules = computed(() =>
     moduleKeys.map((key) => ({
-        code: t(`corpyPage.mlops.modules.items.${key}.code`),
-        name: t(`corpyPage.mlops.modules.items.${key}.name`),
-        description: t(`corpyPage.mlops.modules.items.${key}.description`),
+        code: t(`corpyPage.cms.modules.items.${key}.code`),
+        name: t(`corpyPage.cms.modules.items.${key}.name`),
+        description: t(`corpyPage.cms.modules.items.${key}.description`),
     })),
 );
 
-const featureKeys = ["autoAnnotation", "anomalyGeneration", "explainability"];
+const featureKeys = [
+    "pageEditor",
+    "ragChat",
+    "workflowBuilder",
+    "accessControl",
+];
 const features = computed(() =>
     featureKeys.map((key) => ({
-        title: t(`corpyPage.mlops.features.items.${key}.title`),
-        description: t(`corpyPage.mlops.features.items.${key}.description`),
+        title: t(`corpyPage.cms.features.items.${key}.title`),
+        description: t(`corpyPage.cms.features.items.${key}.description`),
     })),
 );
 
-const architectureKeys = ["control", "execution", "artifacts"];
+const architectureKeys = ["core", "retrieval", "action"];
 const architecture = computed(() =>
     architectureKeys.map((key) => ({
-        title: t(`corpyPage.mlops.architecture.items.${key}.title`),
-        description: t(`corpyPage.mlops.architecture.items.${key}.description`),
+        title: t(`corpyPage.cms.architecture.items.${key}.title`),
+        description: t(`corpyPage.cms.architecture.items.${key}.description`),
     })),
 );
 
-const engineeringKeys = [
-    "pipelines",
-    "modularCore",
-    "releaseUnit",
-    "smallestMachine",
-];
-const engineeringDecisions = computed(() =>
-    engineeringKeys.map((key) => ({
-        title: t(`corpyPage.mlops.engineering.items.${key}.title`),
-        description: t(`corpyPage.mlops.engineering.items.${key}.description`),
+const outcomeKeys = ["citedSources", "graphNotCode", "perTenant"];
+const outcomes = computed(() =>
+    outcomeKeys.map((key) => ({
+        title: t(`corpyPage.cms.outcome.items.${key}.title`),
+        description: t(`corpyPage.cms.outcome.items.${key}.description`),
     })),
 );
 
 const contributionHighlights = computed(() =>
-    highlightsOf("corpyPage.mlops.contribution.highlights"),
+    highlightsOf("corpyPage.cms.contribution.highlights"),
 );
 
-const tags = [
-    "Vue",
-    "Python / FastAPI",
-    "Golang",
-    "Docker",
-    "Kubernetes",
-    "PostgreSQL",
-];
+const tags = ["Vue", "TypeScript"];
 </script>
 
 <template>
@@ -126,8 +125,8 @@ const tags = [
 
         <div class="order-1 lg:order-2 lg:col-span-3">
             <WindowsXPCard
-                title="ConfideMLOps.doc"
-                icon="i-heroicons-cpu-chip"
+                title="ConfideContent.doc"
+                icon="i-heroicons-document-duplicate"
                 minimizable
                 maximizable
                 closable
@@ -144,21 +143,21 @@ const tags = [
 
                     <div class="space-y-3">
                         <h2 class="text-lg font-bold">
-                            {{ t("corpyPage.mlops.tagline") }}
+                            {{ t("corpyPage.cms.tagline") }}
                         </h2>
-                        <p class="text-sm">{{ t("corpyPage.mlops.intro") }}</p>
+                        <p class="text-sm">{{ t("corpyPage.cms.intro") }}</p>
                         <h3 class="font-bold">
-                            {{ t("corpyPage.mlops.gapTitle") }}
+                            {{ t("corpyPage.cms.gapTitle") }}
                         </h3>
-                        <p class="text-sm">{{ t("corpyPage.mlops.gap") }}</p>
+                        <p class="text-sm">{{ t("corpyPage.cms.gap") }}</p>
                         <p class="text-sm">
-                            {{ t("corpyPage.mlops.deploymentNote") }}
+                            {{ t("corpyPage.cms.deploymentNote") }}
                         </p>
                     </div>
 
                     <div>
                         <h3 class="font-bold mb-2">
-                            {{ t("corpyPage.mlops.lifecycle.title") }}
+                            {{ t("corpyPage.cms.lifecycle.title") }}
                         </h3>
                         <div class="space-y-3">
                             <div
@@ -176,7 +175,7 @@ const tags = [
 
                     <div>
                         <h3 class="font-bold mb-2">
-                            {{ t("corpyPage.mlops.modules.title") }}
+                            {{ t("corpyPage.cms.modules.title") }}
                         </h3>
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                             <div
@@ -199,9 +198,9 @@ const tags = [
 
                     <div>
                         <h3 class="font-bold mb-2">
-                            {{ t("corpyPage.mlops.features.title") }}
+                            {{ t("corpyPage.cms.features.title") }}
                         </h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             <div
                                 v-for="feature in features"
                                 :key="feature.title"
@@ -217,7 +216,7 @@ const tags = [
 
                     <div>
                         <h3 class="font-bold mb-2">
-                            {{ t("corpyPage.mlops.architecture.title") }}
+                            {{ t("corpyPage.cms.architecture.title") }}
                         </h3>
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                             <div
@@ -235,30 +234,28 @@ const tags = [
 
                     <div>
                         <h3 class="font-bold mb-2">
-                            {{ t("corpyPage.mlops.engineering.title") }}
+                            {{ t("corpyPage.cms.outcome.title") }}
                         </h3>
-                        <div class="space-y-3">
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                             <div
-                                v-for="decision in engineeringDecisions"
-                                :key="decision.title"
+                                v-for="outcome in outcomes"
+                                :key="outcome.title"
                                 class="border border-gray-300 dark:border-gray-600 rounded p-3 space-y-1"
                             >
                                 <p class="font-semibold text-sm">
-                                    {{ decision.title }}
+                                    {{ outcome.title }}
                                 </p>
-                                <p class="text-xs">
-                                    {{ decision.description }}
-                                </p>
+                                <p class="text-xs">{{ outcome.description }}</p>
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <h3 class="font-bold mb-2">
-                            {{ t("corpyPage.mlops.contribution.title") }}
+                            {{ t("corpyPage.cms.contribution.title") }}
                         </h3>
                         <p class="text-sm">
-                            {{ t("corpyPage.mlops.contribution.intro") }}
+                            {{ t("corpyPage.cms.contribution.intro") }}
                         </p>
                         <ul class="list-disc pl-4 mt-2 space-y-1 text-sm">
                             <li

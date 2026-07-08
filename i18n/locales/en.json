@@ -132,9 +132,10 @@
         "cta": "Learn more"
       },
       "cms": {
-        "name": "Confide CMS",
-        "tagline": "Coming soon",
-        "blurb": "Confide's content and configuration management application. Details coming soon."
+        "name": "Confide Content",
+        "tagline": "A CMS that reads its own documents.",
+        "blurb": "A content hub that combines document storage and organization with AI-powered search, chat, and low-code workflow automation, turning uploaded files into something you can question and act on instead of a static archive.",
+        "cta": "Learn more"
       }
     },
     "mlops": {
@@ -252,6 +253,123 @@
           "I own the CI/CD pipeline for the platform, which cut deployment time significantly and gave the sales team a clearer way to demo builds to prospects.",
           "I helped build an image inference pipeline targeting sub-20ms inference and response time, for near real-time quality checks on production lines.",
           "I created a custom installer for offline deployments, so the platform can be set up entirely inside a client's own network with no external dependency."
+        ]
+      }
+    },
+    "cms": {
+      "title": "Confide Content",
+      "tagline": "A CMS that reads its own documents.",
+      "intro": "Confide Content is Corpy & Co.'s content hub for document-heavy teams: a place to store and organize files, then layer AI-powered search, chat, and low-code automation directly on top of them.",
+      "gapTitle": "Most enterprise CMS platforms are static storage — the documents just sit there.",
+      "gap": "Companies keep thousands of contracts, specs, and manuals in systems that can only find them by filename, so the knowledge inside stays locked away and the work around those documents — extracting fields, comparing vendors, translating, summarizing — stays manual. Confide Content puts document storage, retrieval-augmented search, and workflow automation behind one platform instead of three separate tools.",
+      "deploymentNote": "It ships as three independent modules — CMS, Search & AI, and Workflow — so a client can enable only the combination it needs, all behind enterprise SSO/SAML authentication and role-based access control.",
+      "lifecycle": {
+        "title": "The Content Lifecycle",
+        "stages": {
+          "upload": {
+            "label": "Upload & Organize",
+            "description": "Teams upload and organize content — vendor PDFs, spreadsheets, images — with versioning, metadata tagging, and access control applied from the very first file."
+          },
+          "conversion": {
+            "label": "Conversion",
+            "description": "An asynchronous pipeline converts PDFs and spreadsheets into browser-viewable formats and extracts the underlying text for the AI layer to work with."
+          },
+          "retrieval": {
+            "label": "Indexing",
+            "description": "Documents are chunked and embedded into a per-tenant index, Japanese included, so every file becomes searchable by meaning rather than by filename."
+          },
+          "searchAi": {
+            "label": "Search & Chat",
+            "description": "Chat and search run against that index, and every AI answer carries a confidence score and citations back to the source documents."
+          },
+          "workflow": {
+            "label": "Workflow Automation",
+            "description": "OCR, translation, and summarization blocks can be wired into a graph pointed at a folder, and the resulting pipeline runs in the background, resuming automatically if a step fails."
+          }
+        }
+      },
+      "modules": {
+        "title": "Three Modules",
+        "items": {
+          "cms": {
+            "code": "CMS",
+            "name": "File Management",
+            "description": "Storage with versioning, metadata tagging, org/user/permission management, and object casting — turning a file into a task, or a page into a PDF."
+          },
+          "searchAi": {
+            "code": "AI",
+            "name": "Chat & Search",
+            "description": "Retrieval-augmented chat and hybrid search over everything a user is allowed to see, with citations linking every answer back to its sources."
+          },
+          "workflow": {
+            "code": "WF",
+            "name": "Automated Pipelines",
+            "description": "A low-code node graph for document-heavy processes — extracting fields from vendor PDFs, generating comparison matrices, chaining OCR into translation into summarization."
+          }
+        }
+      },
+      "features": {
+        "title": "Key Features",
+        "items": {
+          "pageEditor": {
+            "title": "Block-based Page Editor",
+            "description": "A block-based editor lets teams author pages directly inside the CMS, next to the files they reference, while PDFs open in an in-browser viewer converted by the async pipeline — nobody has to download a file just to read it."
+          },
+          "ragChat": {
+            "title": "RAG Chat with Cited Sources",
+            "description": "Any file or folder can become a conversation: the chat panel answers strictly from the documents it's scoped to, with sources pinned above the answer so a claim can always be traced back to its origin."
+          },
+          "workflowBuilder": {
+            "title": "Low-code Workflow Builder",
+            "description": "The workflow builder is a node graph of model nodes (object detection, OCR, classification, content moderation), transforms (crop, text extraction, frame sampling), and logic nodes (confidence filters, tagging), wired from inputs to outputs and run against folders of content."
+          },
+          "accessControl": {
+            "title": "Enterprise Access Control",
+            "description": "Every page keeps an activity log and a restorable version history. Sharing is restricted by default and granted per person or group with explicit roles — the same access model the retrieval layer enforces when the AI answers."
+          }
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": {
+          "core": {
+            "title": "CMS Core",
+            "description": "Owns storage, versioning, metadata, and access control for every document in the platform."
+          },
+          "retrieval": {
+            "title": "Retrieval Service",
+            "description": "Runs as its own service behind a hardened gateway that terminates TLS and validates tokens, with the retrieval API on a private network and separate stores for job metadata and the chunk index."
+          },
+          "action": {
+            "title": "Action Layer",
+            "description": "Sits above both: the CMS only talks to workflows through versioned action contracts, and every execution writes to an authoritative trace and audit history."
+          }
+        }
+      },
+      "outcome": {
+        "title": "Outcome",
+        "items": {
+          "citedSources": {
+            "title": "Every Answer Cited",
+            "description": "AI responses pin their sources above the answer, so trust doesn't rely on taking the model's word for it — a citation can always be checked against the source document."
+          },
+          "graphNotCode": {
+            "title": "A Graph Instead of a Codebase",
+            "description": "Document processes that used to mean bespoke scripts — moderation, OCR, tagging — become a small node graph that anyone can read, rewire, and rerun."
+          },
+          "perTenant": {
+            "title": "Isolation by Default",
+            "description": "Access control reaches into the AI layer itself: retrieval only surfaces what a given user is allowed to see, and each client's data lives in its own index."
+          }
+        }
+      },
+      "contribution": {
+        "title": "My Contribution",
+        "intro": "My work on Confide Content has been entirely on the frontend, focused on how people navigate and read what's stored in the platform.",
+        "highlights": [
+          "I built the folder tree used to browse and organize content across the platform.",
+          "I built the file viewer that renders documents in-browser, including the PDF viewing experience.",
+          "I implemented general file navigation across the CMS, from folder structure to per-file actions."
         ]
       }
     }

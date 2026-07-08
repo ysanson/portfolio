@@ -190,7 +190,7 @@ const education = computed(() => ({
                         <UButton
                             :to="item.detailsLink"
                             icon="i-heroicons-arrow-top-right-on-square"
-                            color="primary"
+                            color="secondary"
                             variant="subtle"
                             size="sm"
                             :label="t('experience.learnMore')"
