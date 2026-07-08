@@ -52,12 +52,6 @@ const formattedDate = computed(() => {
                     class="w-full h-40 object-cover"
                 />
             </div>
-            <div
-                v-else
-                class="flex items-center justify-center h-40 border border-dashed border-gray-400 dark:border-gray-600 text-gray-400 dark:text-gray-600"
-            >
-                <UIcon name="i-heroicons-photo" class="text-4xl" />
-            </div>
 
             <p class="text-sm">{{ description }}</p>
 
