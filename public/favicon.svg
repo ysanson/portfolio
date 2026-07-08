@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="titlebar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0997ff"/>
+      <stop offset="8%" stop-color="#0053ee"/>
+      <stop offset="40%" stop-color="#0050ee"/>
+      <stop offset="88%" stop-color="#0066ff"/>
+      <stop offset="93%" stop-color="#005bff"/>
+      <stop offset="100%" stop-color="#003dd7"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window body -->
+  <rect x="2" y="2" width="60" height="60" rx="9" fill="url(#titlebar)" stroke="#0831d9" stroke-width="2"/>
+  <rect x="2" y="2" width="60" height="60" rx="9" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Glossy titlebar sheen -->
+  <path d="M4 10 Q32 -2 60 10 L60 22 Q32 12 4 22 Z" fill="url(#sheen)"/>
+
+  <!-- YS lettering -->
+  <text x="32" y="45" font-family="Tahoma, Verdana, Segoe UI, sans-serif" font-size="30" font-weight="700"
+        text-anchor="middle" fill="#ffffff" stroke="#00227a" stroke-width="2" paint-order="stroke" stroke-linejoin="round">YS</text>
+</svg>
