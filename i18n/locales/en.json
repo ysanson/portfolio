@@ -6,6 +6,7 @@
   },
   "experience": {
     "teamSize": "Team size: ",
+    "learnMore": "Learn more",
     "corpy": {
       "role": "Full Stack Engineer",
       "period": "Jan 2024 – Present",
@@ -69,10 +70,26 @@
       "adaptability": "Adaptability"
     },
     "soft": {
-      "communication": ["Clear reporting", "Active listening", "Technical writing", "Knowledge transfer"],
-      "teamwork": ["Technical leadership", "Collaboration", "Peer programming", "Agile/Scrum methods"],
-      "problemSolving": ["Critical thinking", "Self-learning"],
-      "adaptability": ["Continuous learning", "Priority management"]
+      "communication": [
+        "Clear reporting",
+        "Active listening",
+        "Technical writing",
+        "Knowledge transfer"
+      ],
+      "teamwork": [
+        "Technical leadership",
+        "Collaboration",
+        "Peer programming",
+        "Agile/Scrum methods"
+      ],
+      "problemSolving": [
+        "Critical thinking",
+        "Self-learning"
+      ],
+      "adaptability": [
+        "Continuous learning",
+        "Priority management"
+      ]
     }
   },
   "education": {
@@ -101,6 +118,142 @@
       "name": "Japanese",
       "level": "Business",
       "certification": "JLPT N2"
+    }
+  },
+  "corpyPage": {
+    "back": "Back",
+    "overview": {
+      "title": "Corpy & Co",
+      "intro": "Corpy & Co. builds AI quality management software for regulated and quality-critical industries — manufacturing, medical devices, and beyond. Since January 2024, I've worked as a full-stack engineer on Confide, Corpy's flagship product suite, alongside R&D, infrastructure, and QA work. Here's a closer look at the two applications I contribute to the most.",
+      "mlops": {
+        "name": "Confide MLOps",
+        "tagline": "One platform for the whole AI lifecycle.",
+        "blurb": "An MLOps and AI quality management platform covering the full lifecycle: data management, annotation, model training, and production operations — built for industries where model decisions need to be explainable and auditable.",
+        "cta": "Learn more"
+      },
+      "cms": {
+        "name": "Confide CMS",
+        "tagline": "Coming soon",
+        "blurb": "Confide's content and configuration management application. Details coming soon."
+      }
+    },
+    "mlops": {
+      "title": "Confide MLOps",
+      "tagline": "One platform for the whole AI lifecycle.",
+      "intro": "Confide is Corpy & Co.'s MLOps and AI quality management platform — one place to take a model from raw data through training, evaluation, and operations, with QA and explainability built in rather than bolted on.",
+      "gapTitle": "Shipping a model is easy. Operating one you can trust isn't.",
+      "gap": "Most ML work dies in the gap between a notebook and production: data scattered across folders, transforms nobody can reproduce, models with no record of what they were trained on. Confide closes that gap by running the whole lifecycle — data, training, evaluation, operations — through one platform where everything is versioned and traceable.",
+      "deploymentNote": "Because it serves quality-critical industries, deployment isn't just the cloud: releases ship the same way to internal staging and production, and to offline client machines with no direct network access.",
+      "lifecycle": {
+        "title": "The AI Lifecycle",
+        "stages": {
+          "data": {
+            "label": "Data Management",
+            "description": "Assets are uploaded, versioned, and tagged into annotation sets — a browsable, searchable dataset instead of loose folders. A set can evolve, with new batches added or bad images pruned, without ever losing track of what a given model was trained on."
+          },
+          "annotation": {
+            "label": "Annotation",
+            "description": "An embedded Label Studio editor handles manual work, bounding boxes, polygons, and class tags included. For bulk coverage, prompt-based auto-annotation takes a text description of what to detect and runs a model across the whole dataset with a confidence threshold, turning labeling from per-image work into a supervised batch job."
+          },
+          "analysis": {
+            "label": "Analysis",
+            "description": "Before any training starts, exploratory data analysis scores a dataset on completeness, consistency, and accuracy, with a clustering view and AI-generated insights that read the plots for you — well-separated clusters, balanced classes, and what that means for the model about to be trained."
+          },
+          "training": {
+            "label": "Model Training & Evaluation",
+            "description": "Training runs are versioned and tied back to the exact data that produced them. Results come back as confusion matrices, confidence distributions, per-class precision-recall curves, and a blunt best-and-worst class ranking, with evaluation and explainability runs one click away from the same screen."
+          },
+          "operations": {
+            "label": "Operations",
+            "description": "A trained model is packaged into a versioned container image — the same release unit whether it ships to staging, production, or a fully offline client machine. Operations screens track which version is live where, next to the metrics and explainability output for that release."
+          }
+        }
+      },
+      "modules": {
+        "title": "Three Modules",
+        "items": {
+          "dm": {
+            "code": "DM",
+            "name": "Data Management",
+            "description": "Manages, analyzes, and processes data — exploratory analysis, preprocessing, and versioned pipelines that keep the lineage of every transform."
+          },
+          "mm": {
+            "code": "MM",
+            "name": "Model Management",
+            "description": "Manages, trains, and evaluates models, so every version carries a traceable history of what it was trained on and how it scored."
+          },
+          "xai": {
+            "code": "XAI",
+            "name": "Explainability",
+            "description": "Explainable-AI tooling built into operations, because in quality-critical deployments, “the model said so” isn't an answer."
+          }
+        }
+      },
+      "features": {
+        "title": "Key Features",
+        "items": {
+          "autoAnnotation": {
+            "title": "Prompt-based auto-annotation",
+            "description": "Describing a class in plain text is enough — a detection model runs it across the whole dataset with a confidence threshold, and everything above that threshold is queued for human review instead of being written straight to the dataset."
+          },
+          "anomalyGeneration": {
+            "title": "Anomaly generation",
+            "description": "Factories produce thousands of good parts and almost no defective ones, which starves anomaly detection of training data. This tool composites real defect patches onto normal images with Poisson blending — position, size, brightness, and blend strength are all tunable — turning a handful of real defects into a usable training set."
+          },
+          "explainability": {
+            "title": "Explainability (XAI)",
+            "description": "Explainability tooling sits next to evaluation metrics in the operations screens, one click from any training result, because in regulated industries a model's decision needs a defensible reason, not just a confidence score."
+          }
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": {
+          "control": {
+            "title": "Control plane",
+            "description": "The web and API layer registers each module and holds the metadata records for the whole platform."
+          },
+          "execution": {
+            "title": "Execution plane",
+            "description": "Long-running work never blocks a request: pipeline runs, training, and evaluation execute on a fleet of asynchronous workers."
+          },
+          "artifacts": {
+            "title": "Artifacts",
+            "description": "Everything that crosses an environment boundary is an artifact — versioned container images in a registry, pipeline configs in the database, and lineage logs tying every model version back to its dataset snapshot and deployment event."
+          }
+        }
+      },
+      "engineering": {
+        "title": "Engineering Decisions",
+        "items": {
+          "pipelines": {
+            "title": "Pipelines are versioned database objects",
+            "description": "A preprocessing pipeline isn't a script someone ran once — it's a config stored in the database with a version, a parent it can inherit from, and the dataset it belongs to. That makes every run re-runnable and answers the lineage question: which transforms, in which version, produced this data."
+          },
+          "modularCore": {
+            "title": "One AI core, installable in pieces",
+            "description": "The AI core is modularized into an installable package with optional add-ons per module, so a deployment only installs what it needs. Missing features degrade to “feature disabled” instead of a crash, and client installs stay small because they only carry the modules they use."
+          },
+          "releaseUnit": {
+            "title": "The release unit is an image, not source code",
+            "description": "A passing build produces a versioned container image pushed to a registry; staging and production run containers only, with no source code on the box. For offline client machines, the same images travel as saved archives and load without touching the internet."
+          },
+          "smallestMachine": {
+            "title": "Designed for the smallest machine, not the biggest",
+            "description": "Realistic datasets used to kill pipeline workers on 16GB machines — images loaded eagerly into memory, transforms piling up in lists. The fix was architectural: pass paths instead of arrays, load lazily inside transforms, stream per asset, and write to temp files. Client hardware is a constraint, not an afterthought."
+          }
+        }
+      },
+      "contribution": {
+        "title": "My Contribution",
+        "intro": "I work on Confide MLOps as a full-stack engineer, moving between the frontend, backend, and the infrastructure that ships it.",
+        "highlights": [
+          "I built the licensing system that ties activation to cryptographic hardware fingerprints and validates over-the-air, covering both cloud and fully offline deployments.",
+          "I own the CI/CD pipeline for the platform, which cut deployment time significantly and gave the sales team a clearer way to demo builds to prospects.",
+          "I helped build an image inference pipeline targeting sub-20ms inference and response time, for near real-time quality checks on production lines.",
+          "I created a custom installer for offline deployments, so the platform can be set up entirely inside a client's own network with no external dependency."
+        ]
+      }
     }
   },
   "projects": {
