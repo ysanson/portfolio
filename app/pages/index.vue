@@ -1,25 +1,7 @@
 <script setup lang="ts">
-import type { PageLink } from "@nuxt/ui";
-
 const { t } = useI18n();
 
-const links = ref<PageLink[]>([
-    {
-        label: "LinkedIn",
-        icon: "i-lucide-linkedin",
-        to: "https://www.linkedin.com/in/yvansanson/",
-    },
-    {
-        label: "GitHub",
-        icon: "i-lucide-github",
-        to: "https://github.com/ysanson",
-    },
-    {
-        label: "Gitlab",
-        icon: "i-lucide-gitlab",
-        to: "https://gitlab.com/ysanson",
-    },
-]);
+const links = useSocialLinks();
 
 const languages = computed(() => [
     {

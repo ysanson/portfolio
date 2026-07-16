@@ -1,5 +1,10 @@
 {
   "welcome": "ようこそ！",
+  "card": {
+    "home": "ホーム",
+    "email": "メール",
+    "roleAt": "{company} {role}"
+  },
   "presentation": {
     "name": "Yvan SANSON (イヴァン　サンソン)",
     "text": "TypeScript、Go、Python、Javaなど幅広い技術スタックを扱い、Kubernetes、Terraform、AWS/GCP上でのCI/CDといったDevOpsの実務経験も持つ。業務外では、日頃使っているツールの仕組みを深く理解したいという好奇心から、Rustで実装したBitTorrentクライアント、Goで実装したインタプリタ、自転車のメンテナンスを記録するSwiftUIアプリなど、個人プロジェクトを通じてシステムプログラミングやモバイル開発を探求している。"

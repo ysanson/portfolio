@@ -1,5 +1,10 @@
 {
   "welcome": "Welcome!",
+  "card": {
+    "home": "Home",
+    "email": "Email",
+    "roleAt": "{role} at {company}"
+  },
   "presentation": {
     "name": "Yvan SANSON",
     "text": "I move comfortably across the stack, including TypeScript, Go, Python, and Java, and have hands-on DevOps experience with Kubernetes, Terraform, and CI/CD on AWS and GCP. Outside of work, I dig into systems programming and mobile development through personal projects: a BitTorrent client in Rust, a tree-walking interpreter in Go, and a SwiftUI app for tracking bike maintenance, because I like understanding how the tools I rely on actually work under the hood."
