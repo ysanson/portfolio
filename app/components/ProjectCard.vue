@@ -31,6 +31,8 @@ const formattedDate = computed(() => {
         day: "numeric",
     });
 });
+
+const lightboxOpen = ref(false);
 </script>
 
 <template>
@@ -46,11 +48,17 @@ const formattedDate = computed(() => {
                 v-if="image"
                 class="border border-gray-500 dark:border-gray-600 bg-black/5 dark:bg-black/30 p-1"
             >
-                <img
-                    :src="image"
-                    :alt="`${name} screenshot`"
-                    class="w-full h-40 object-cover"
-                />
+                <button
+                    type="button"
+                    class="block w-full cursor-zoom-in"
+                    @click="lightboxOpen = true"
+                >
+                    <img
+                        :src="image"
+                        :alt="`${name} screenshot`"
+                        class="w-full h-40 object-cover object-top"
+                    />
+                </button>
             </div>
 
             <p class="text-sm">{{ description }}</p>
@@ -150,4 +158,23 @@ const formattedDate = computed(() => {
             </div>
         </template>
     </WindowsXPCard>
+
+    <ClientOnly>
+        <UModal
+            v-if="image"
+            v-model:open="lightboxOpen"
+            :title="`${name} screenshot`"
+            :ui="{
+                content: 'max-w-3xl sm:max-w-4xl lg:max-w-6xl xl:max-w-7xl',
+            }"
+        >
+            <template #body>
+                <img
+                    :src="image"
+                    :alt="`${name} screenshot`"
+                    class="w-full h-auto max-h-[85vh] object-contain"
+                />
+            </template>
+        </UModal>
+    </ClientOnly>
 </template>

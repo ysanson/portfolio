@@ -394,8 +394,8 @@
       "interpreterGo": {
         "description": "書籍『Writing An Interpreter In Go』を参考に実装したインタプリタ。字句解析器、構文解析器、評価器を含む。"
       },
-      "gitGud": {
-        "description": "Gitリポジトリを閲覧・操作するための実験的なターミナルUI（TUI）。Go言語で実装。"
+      "cordage": {
+        "description": "Goで書かれた分散型インメモリ分析エンジン。複数の並行ワーカーに処理を分散し、大規模な表形式データセットを処理する。"
       },
       "simpleFormBuilder": {
         "description": "React向けの、スキーマ駆動型のシンプルなフォームビルダー兼ジェネレーター。"
@@ -403,8 +403,8 @@
       "nyaaBrowser": {
         "description": "Nyaa.siに新しく追加されたトレントを閲覧・検索するためのデスクトップアプリ。"
       },
-      "focalStats": {
-        "description": "1枚または複数枚の画像のフォーカル統計量を計算するための小さなユーティリティ。"
+      "adventOfCode": {
+        "description": "Advent of Codeのパズルの解答集。アルゴリズムの練習と新しい言語を試す毎年の口実として取り組んでいる。"
       },
       "portfolio": {
         "description": "このサイト自体です。NuxtとVueで構築されたWindows XPテーマの個人ポートフォリオで、タスクバーやスタートメニュー、GitHub/GitLabのライブ統計情報を備えています。"

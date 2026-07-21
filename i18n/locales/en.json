@@ -394,8 +394,8 @@
       "interpreterGo": {
         "description": "My take on the well-known 'Writing An Interpreter In Go' book: a lexer, parser and evaluator for a small custom language."
       },
-      "gitGud": {
-        "description": "An experimental terminal user interface for browsing and interacting with Git repositories, written in Go."
+      "cordage": {
+        "description": "A distributed, in-memory analytics engine written in Go, sharding work across concurrent workers to process large tabular datasets."
       },
       "simpleFormBuilder": {
         "description": "A simple, schema-driven form builder and generator for React applications."
@@ -403,8 +403,8 @@
       "nyaaBrowser": {
         "description": "A desktop app to browse and search recently added torrents on Nyaa.si."
       },
-      "focalStats": {
-        "description": "A small utility to compute focal statistics for a single picture or a whole folder of images."
+      "adventOfCode": {
+        "description": "Solutions to the Advent of Code puzzles, used as a yearly excuse to practice algorithms and try new languages."
       },
       "portfolio": {
         "description": "This very site — a Windows XP-themed personal portfolio built with Nuxt and Vue, complete with a taskbar, start menu, and live GitHub/GitLab project stats."
