@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import velovistaImg from "~/assets/images/projects/velovista.webp";
+import rsTorrentImg from "~/assets/images/projects/rs_torrent.webp";
+import adventOfCodeImg from "~/assets/images/projects/adventOfCode.webp";
+
 interface ProjectEntry {
     name: string;
     platform: "github" | "gitlab";
@@ -22,6 +26,7 @@ const projects = computed<ProjectEntry[]>(() => [
         repoUrl: "https://gitlab.com/ysanson/bike-stats",
         description: t("projects.items.veloVista.description"),
         tags: ["Swift", "SwiftUI", "iOS", "watchOS"],
+        image: velovistaImg,
     },
     {
         name: "rs_torrent",
@@ -31,6 +36,26 @@ const projects = computed<ProjectEntry[]>(() => [
         repoUrl: "https://github.com/ysanson/rs_torrent",
         description: t("projects.items.rsTorrent.description"),
         tags: ["Rust", "Networking", "P2P"],
+        image: rsTorrentImg,
+    },
+    {
+        name: "AdventOfCode",
+        platform: "github",
+        owner: "ysanson",
+        repo: "AdventOfCode",
+        repoUrl: "https://github.com/ysanson/AdventOfCode",
+        description: t("projects.items.adventOfCode.description"),
+        tags: ["Algorithms", "Puzzles"],
+        image: adventOfCodeImg,
+    },
+    {
+        name: "cordage",
+        platform: "github",
+        owner: "ysanson",
+        repo: "cordage",
+        repoUrl: "https://github.com/ysanson/cordage",
+        description: t("projects.items.cordage.description"),
+        tags: ["Go", "Distributed Systems", "gRPC"],
     },
     {
         name: "interpreter-go",
@@ -40,15 +65,6 @@ const projects = computed<ProjectEntry[]>(() => [
         repoUrl: "https://github.com/ysanson/interpreter-go",
         description: t("projects.items.interpreterGo.description"),
         tags: ["Go", "Compilers", "Interpreters"],
-    },
-    {
-        name: "GitGud",
-        platform: "github",
-        owner: "ysanson",
-        repo: "GitGud",
-        repoUrl: "https://github.com/ysanson/GitGud",
-        description: t("projects.items.gitGud.description"),
-        tags: ["Go", "TUI", "Git"],
     },
     {
         name: "simple-form-builder",
@@ -67,15 +83,6 @@ const projects = computed<ProjectEntry[]>(() => [
         repoUrl: "https://github.com/ysanson/NyaaBrowser",
         description: t("projects.items.nyaaBrowser.description"),
         tags: ["C#", "Desktop"],
-    },
-    {
-        name: "FocalStats",
-        platform: "gitlab",
-        owner: "ysanson",
-        repo: "focalstats",
-        repoUrl: "https://gitlab.com/ysanson/focalstats",
-        description: t("projects.items.focalStats.description"),
-        tags: ["Image Processing", "CLI"],
     },
     {
         name: "portfolio",
